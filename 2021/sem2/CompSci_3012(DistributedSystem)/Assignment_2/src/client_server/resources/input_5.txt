@@ -1,0 +1,20 @@
+title:Angry Birds
+subtitle:The Official Home of Angry Birds
+link:https://www.angrybirds.com
+updated:2019-08-12T11:42:30Z
+author:
+id:https://www.angrybirds.com/feed/atom/
+entry
+title:Get ready for The Angry Birds Movie 2 premiere with new in-game events!
+link:https://www.angrybirds.com/blog/get-ready-angry-birds-movie-2-premiere-new-game-events/
+author:Lark Kent
+id:https://www.angrybirds.com/?p=17502
+updated:019-08-12T11:42:30Z
+summary:The Angry Birds Movie 2 comes to US theaters tomorrow, but who wants to wait that long?! Good news: you can get into the movie mood right now with a new batch of Angry Birds Movie 2 events in your favorite Angry Birds games! Prime the hype engine with the trailer for The Angry Birds [&#8230;]
+entry
+title:Angry Birds AR: Isle of Pigs is available now!
+link:https://www.angrybirds.com/blog/angry-birds-ar-isle-pigs-available-now/
+author:Lark Kent
+id:https://www.angrybirds.com/?p=17447
+updated:2019-04-29T10:30:08Z
+summary:Classic Angry Birds gameplay + AR = an incredible amount of fun! Play Angry Birds AR: Isle of Pigs now on your ARKit enabled iOS device.

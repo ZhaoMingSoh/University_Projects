@@ -1,0 +1,277 @@
+---
+title: "Assignment_1"
+author: "Zhao Ming Soh a1751699"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T, results = "hide")
+```
+
+```{r}
+pacman::p_load(tinytex, cowplot, gridExtra)
+```
+
+# Question 1
+## 1a.
+$$X = \begin{bmatrix}
+1 & 1 & 0 & 0 & -1 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & -1 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & -1 \\
+1 & 0 & -1 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & -1 & 0 & 1 & 0 \\
+1 & -1 & 0 & 0 & 0 & 0 & 1 \\
+1 & 1 & 0 & 0 & 0 & -1 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & -1 \\
+1 & 0 & 0 & 1 & -1 & 0 & 0 \\
+1 & 0 & 0 & -1 & 1 & 0 & 0 \\
+1 & -1 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & -1 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}$$
+
+## 1b.
+$$\text{Row reduced echelon of X} = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & -1 \\
+0 & 0 & 1 & 0 & 0 & 0 & -1 \\
+0 & 0 & 0 & 1 & 0 & 0 & -1 \\
+0 & 0 & 0 & 0 & 1 & 0 & -1 \\
+0 & 0 & 0 & 0 & 0 & 1 & -1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\end{bmatrix}$$
+The row reduced echelon of matrix X does not have pivots in every single column, 
+this tells us that the constants are not equal to the trivial solution of 0 which 
+means that the column matrix of X are not linearly independent.
+
+## 1c.
+$$X = \begin{bmatrix}
+1 & 0 & 0 & 0 & -1 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & -1 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & -1 \\
+1 & 0 & -1 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & -1 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0 & -1 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & -1 \\
+1 & 0 & 0 & 1 & -1 & 0 & 0 \\
+1 & 0 & 0 & -1 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & -1 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}$$
+
+$$\text{Row reduced echelon X} = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\end{bmatrix}$$
+The row reduced echelon of X with $\alpha_1=0$ has pivots in every columns 
+except for $\alpha_1$, this tells us that the columns of matrix X are linearly
+independent as the only way of solving the matrix is by setting the constants 
+equal to 0 which is the trivial solution that underpins the definition of a linearly
+independent matrix.
+
+## 1d.
+$$
+\begin{aligned}
+E[y_{ijk}] & = E[\mu+\alpha_i-\alpha_j+\epsilon_{ijk}] \\
+& = E[\mu]+E[\alpha_i]-E[\alpha_j]+E[\epsilon_{ijk}] \\
+& = u + \alpha_i - \alpha_j & \text{ given that }E[\epsilon_{ijk}] = 0 \\
+\end{aligned}
+$$
+\begin{center}
+Expected score of team 1 as home team vs team 2 as away team: \\
+$E[y_{12k}] = \mu + \alpha_1 - \alpha_2$
+\end{center}
+
+\begin{center}
+Expected score of team 1 as away team vs team 2 as home team: \\
+$E[y_{21k}] = \mu + \alpha_2 - \alpha_1$
+\end{center}
+
+
+The parameter $\mu$ can be considered as the home ground advantage because the 
+error term, $E[\epsilon_{ijk}]$ is equal to 0, this means that there is no 
+difference in the team strength of home team against away team. Therefore, 
+the $\mu$ is the only term that is left which can then be interpreted as
+the expected home advantage of home team against the away team.
+
+## 1e.
+The null hypothesis, $H_o$ is interpreted as the team strength of $B=\alpha_2, C=\alpha_3, D=\alpha_4, E=\alpha_5, F=\alpha_6, D=\alpha_7$ are equal to each other with respect to $A=\alpha_1$.
+
+## 1f.
+\begin{center}
+$X_1$ is the design matrix of the home team
+\end{center}
+
+$$X_1 = \begin{bmatrix}
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}
+$$
+\begin{center}
+$X_2$ is the design matrix of the away team
+\end{center}
+$$
+X_2 = \begin{bmatrix}
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\end{bmatrix}
+$$
+$$
+X_2 = \begin{bmatrix}
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+\end{bmatrix}
+$$
+
+$$X_1 - X_2 = \begin{bmatrix}
+0 & 0 & 0 & 0 & -1 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & -1 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & -1 \\
+0 & 0 & -1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & -1 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 0 & 0 & -1 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & -1 \\
+0 & 0 & 0 & 1 & -1 & 0 & 0 \\
+0 & 0 & 0 & -1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & -1 & 0 & 0 & 0 & 1 \\
+\end{bmatrix}$$
+
+Matrix X and the resulting matrix of $X_1-X_2$ are exactly the same except for the intercept term, $\mu$ which is cancelled out in the resulting matrix of $X_1-X_2$. This means that the home team effect is no longer presence in the resulting matrix of $X_1-X_2$.
+
+# Question 2
+**Setup**
+```{r results ='hide', message = FALSE}
+pacman::p_load(tidyverse)
+AFL2019 <- read_csv("AFL2019.csv")
+head(AFL2019)
+```
+
+## 2a.
+```{r results ='markup', message = FALSE}
+sapply(AFL2019, class)
+AFL2019$Home.Team <- as.factor(AFL2019$Home.Team)
+AFL2019$Away.Team <- as.factor(AFL2019$Away.Team)
+summary(AFL2019$Home.Team)
+summary(AFL2019$Away.Team)
+```
+The standard reference level for the both teams is Adelaide Crows.
+
+## 2b.  
+```{r results ='markup', message = FALSE}
+AFL2019 <- AFL2019 %>%
+  mutate(Difference = Home.Score - Away.Score)
+head(AFL2019$Difference)
+```
+
+## 2c.
+```{r results ='markup', message = FALSE}
+X_1 <- model.matrix(~ Home.Team, data = AFL2019)
+X_2 <- model.matrix(~ Away.Team, data = AFL2019)
+X <- (X_1 - X_2)
+X <- subset(X, select = -c(1))
+```
+
+## 2d.
+```{r results ='markup', message = FALSE}
+y <- AFL2019$Difference
+AFL2019_lm <- lm(y ~ X)
+summary(AFL2019_lm)
+p_1 <- plot(AFL2019_lm, which = 1)
+p_2 <- plot(AFL2019_lm, which = 2)
+```
+**Linearity : **  
+The assumption of linearity seems to be reasonable as the points are scattered randomly above and below the red line and the red line is approximately horizontal around the zero line.
+
+**Normality :  **  
+The assumption of normality seems to also be reasonable because the majority of the data points are scattered around the middle of the line apart from the deviation of a couple of data points on each end of the line.
+
+**Homoscedasticity :**  
+The assumption of homoscedasticity seems to be reasonable because the spread of the data points around the zero line is approximately constant.
+
+**Independence :**  
+Becuase there is not enough information given in terms of how the data are collected, we cannot make any conclusion about the assumption of independence for the data.
+
+## 2e.
+```{r results ='markup', message = FALSE}
+plot(AFL2019_lm, which=5)
+```
+## 2f.
+```{r}
+estimated_coefficient <- coef(AFL2019_lm)
+estimated_coefficient
+summary(AFL2019_lm)
+```
+The estimated home team effect is essentially the intercept term which is equal 3.682 when all predictors are equal to 0. Given that the p-value of the estimated home team effect is 0.1174 which is greater than the 0.05 significance level, this tells us that the home team effect is not statistically significant.
+
+## 2g.
+```{r results ='markup', message = FALSE}
+summary(AFL2019_lm)
+```
+The F-statistic for the model is 4.424 with degree of freedoms of 17 and 180. Given that the p-value is $1.337\times10^-7$ is smaller than the significance level of 0.05, we can conclude that the home ground advantage in our model is statistically significant that there is indeed a difference in the points scored between teams playing in their home ground vs the away ground.
+
+## 2h.
+Using the equation :
+$$
+\begin{aligned}
+y_{ijk} = \mu + \alpha_i - \alpha_j + \epsilon_{ijk}
+\end{aligned}
+$$
+```{r results ='markup', message = FALSE}
+expected_num_of_points <- ceiling(3.682 + 12.892 - (-14.758))
+expected_num_of_points
+```
+$$
+\begin{aligned}
+y & = 3.682 + 12.892 - (-14.758) \\
+& = 31.332 &\text{round to the nearest point} \\
+& = 32
+\end{aligned}
+$$
+The expected number of points that the Brisbane Lions will win by is 32.

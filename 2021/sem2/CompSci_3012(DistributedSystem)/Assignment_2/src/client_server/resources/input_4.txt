@@ -1,0 +1,6 @@
+title:Obama Foundation
+subtitle:Ordinary people working together can change history.
+link:https://www.obama.org
+updated:2021-09-08T22:01:56Z
+author:
+id:https://www.obama.org/feed/atom/

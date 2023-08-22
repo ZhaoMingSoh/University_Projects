@@ -1,0 +1,8139 @@
+$ websubmit-automark -g 5 -n a1688820 -x a1688820 -a 2020/s1/adsa/assignment1@179 -r 179 -f /users/assessment/websubmit/2020/s1/adsa/assignment1/Web-Submission/a1688820/revision-179 -d 200324-193508 -e -u https://version-control.adelaide.edu.au/svn/ 2020/s1/adsa/assignment1
+****************************************************************************************************************** 
+Web Submission Script for Assignment Key: 2020/s1/adsa/assignment1  User: a1688820 SVN Exported revision 179.
+******************************************************************************************************************
+Submitted Files:
+
+.:
+total 4
+-rw-rw---- 1 legend teaching 3088 Mar 24 19:34 main.cpp
+****************************************************************************************************************** 
+Output From Web Submission Script:
+For input  110010111010001000111110110101010010000001010010010000001100101110011110 100111100101100111011100 2
+Output received  output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+110010111010001000111110110101010010000001010010110111110010010101111010
+
+Output shouldbe  110010111010001000111110110101010010000001010010110111110010010101111010 11111011111010110011101001011101101000000001010001010000101110011100001111111001110100111001000
+Sum and multiplication incorrect
+
+For input  1110010001111001001111101001011000010011011001111010101111101010101 1111101001100101011110001111111010101110000001 2
+Output received  output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+1110010001111001010001100110100100111111001011111010000101011010110
+
+Output shouldbe  1110010001111001010001100110100100111111001011111010000101011010110 11011111011110001111011011110000011000010001100101010010001110001100100011001100011100100100001011101000011010101
+Sum and multiplication incorrect
+
+For input  44201332430001131333011212020311220233134121414214321220222332130013444124111240314041332402 2231403131104000310413124030243330041214011100034344332113132 5
+Output received  output: 4 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+44201332430001131333011212020314002141320230420030234344303131010110213140211330213424001034
+
+Output shouldbe  44201332430001131333011212020314002141320230420030234344303131010110213140211330213424001034 221414443243433333323002401424221330221422011203011313234231143243304032330011231231204344421414101243421344101333330431030321122014440432443024420024114
+Sum and multiplication incorrect
+
+For input  222100102101102210120102102010211111210201110022021010002111210210012101200211 22111211102000010222201122110202110010120121020201112201021202101011011222 3
+Output received  output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+222122221012211210201102010210022021020212000220111211122020002112120112212210
+
+Output shouldbe  222122221012211210201102010210022021020212000220111211122020002112120112212210 22022021202222210002221200221211122211110121120000001222010021121212122011100020122102221201010120121010121100201201120201220022221221112001201100101012
+Sum and multiplication incorrect
+
+For input  87270832220532684725583445874763470221251137425411578864031 20417525164603308305745184618806386517071240025840631 9
+Output received  output: 2 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 8 : 1
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 1 : 0
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 7 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+87270852638157860430002752731058200127647655506651615814662
+
+Output shouldbe  87270852638157860430002752731058200127647655506651615814662 2006561608140804646818017022052205454553258404772724786685201221320478051702251767156516875820618223323566065661
+Sum and multiplication incorrect
+
+For input  41022334011021134214410 15022202124523204 6
+Output received  output: 4 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+41022353033223303142014
+
+Output shouldbe  41022353033223303142014 1141224103532511320434153323401150302440
+Sum and multiplication incorrect
+
+For input  42115713732526022427143405275503617252027350236165237057043501763206642411556632152237651532401114 14526211504132520373562723172241524626216755127522433346307163413774665017044 8
+Output received  output: 0 : 1
+
+output: 6 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 6 : 1
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 6 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 7 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 5 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 7 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 7 : 0
+
+output: 0 : 0
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 6 : 0
+
+42115713732526022427160133507207751772423133161357500603671720740336365045125141335653646417420160
+
+Output shouldbe  42115713732526022427160133507207751772423133161357500603671720740336365045125141335653646417420160 660517774636372063454332460253754413326537610264734742330370377607404576055717062131033417343117644235766176277521224122045726063245340515263634022141016560343163757607235260
+Sum and multiplication incorrect
+
+For input  1111002211212010022100111222112022 2120220012102000 3
+Output received  output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+1111002211212010101221102011221022
+
+Output shouldbe  1111002211212010101221102011221022 10211211012222021101212210002101120202120022021000
+Sum and multiplication incorrect
+
+For input  11020202221201211100011101121011111222010220020001202211211221120211112201112202022210200212121221 21020001111121211120000112022211202111112112212001112221220222012001 3
+Output received  output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+11020202221201211100011101121102202000122112001121210101011210100100002021101210212202121211210222
+
+Output shouldbe  11020202221201211100011101121102202000122112001121210101011210100100002021101210212202121211210222 1010201011201112210202201102201101002220200002220112210012010012112210000021201220101200011200122222122211201120100010001101010000000211101222201122011020121002020221
+Sum and multiplication incorrect
+
+For input  10121000001221122101021121200212120011021021210220110111001 2121012200122221121211010201222122010120200120001 3
+Output received  output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+10121000011112212001221120022200200220020220221111011001002
+
+Output shouldbe  10121000011112212001221120022200200220020220221111011001002 100100020122010101012200202220021011220120212111020011210122211210021120202220110021102100210002002101001001
+Sum and multiplication incorrect
+
+For input  5208731553453735357464215144743360542072312604513803581253475336053328554721008114133184516500877 55001216032312363701686582062247358580882278134755285223861016456518145365037580746112821 9
+Output received  output: 8 : 0
+
+output: 0 : 1
+
+output: 8 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 7 : 1
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 6 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 7 : 1
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 2 : 0
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 5 : 1
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+5208731618455052400776578846541052614330672285506182726118771561024346122340154480171775363613808
+
+Output shouldbe  5208731618455052400776578846541052614330672285506182726118771561024346122340154480171775363613808 320646318541378084503230360212611888572622147716088823556000613474253728203536537676155358710826782733625380654423066473252334247031185476276554201743726853762608683257334084177746054837
+Sum and multiplication incorrect
+
+For input  2302114434014004010322312311020312434123002020404303230011433200242031324200034203020113314214120212 1002432240320023031421311131211113230143 5
+Output received  output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+2302114434014004010322312311020312434123002020404303230011434203224322144223121124331300030332400410
+
+Output shouldbe  2302114434014004010322312311020312434123002020404303230011434203224322144223121124331300030332400410 2314442130334003200213444031044322311044101001330440114333240144141411131202440123130222212003000434030440403234413340221420021040111111421
+Sum and multiplication incorrect
+
+For input  2322342403414330342024302342142442100404110 333441404102314101 5
+Output received  output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+2322342403414330342024303231134401203223211
+
+Output shouldbe  2322342403414330342024303231134401203223211 2003433001302140412412113341323442101342102301211111422410110
+Sum and multiplication incorrect
+
+For input  717054787438013163136616186000631743622005338714706765814373264604473534814165637126680873343 161074865522762141557415522535146744 9
+Output received  output: 7 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+717054787438013163136616186000631743622005338714706765814544350571106407055734153650326131187
+
+Output shouldbe  717054787438013163136616186000631743622005338714706765814544350571106407055734153650326131187 130757603116338670435603608748253748713680432677520170727451270328766303172426507618271177817835308738171020354183225018010363723
+Sum and multiplication incorrect
+
+For input  20002022102021 102222220 3
+Output received  output: 1 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+20002202102011
+
+Output shouldbe  20002202102011 2201000001202011202020
+Sum and multiplication incorrect
+
+For input  332400204023341002031222233434033110433401214342241134204144312441033311210144400221311210222 1302231033024412433234234103111301441314340 5
+Output received  output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+332400204023341002031222233434033110433401214342242441440232342404022100444303012023303030112
+
+Output shouldbe  332400204023341002031222233434033110433401214342242441440232342404022100444303012023303030112 1100140200430124302041430234232323110331310000013203300301003032423103433004140133313340342311341024332341204312403043103340000100410030
+Sum and multiplication incorrect
+
+For input  205532226042634631045216454216625 45620054665534155116160242240 7
+Output received  output: 5 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 5 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 6 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+205611146130633465233335644462165
+
+Output shouldbe  205611146130633465233335644462165 13154021265641351552413545132634221145464562100541054151625660
+Sum and multiplication incorrect
+
+For input  3220201300112023212120120303212130201220102322312321202311131 310030310010000311313221023012011333103101000213031331031202 4
+Output received  output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+10130232210122030130100001332230202200323203323132013200002333
+
+Output shouldbe  10130232210122030130100001332230202200323203323132013200002333 2331221332301012002013330101221023003231302202113020202200003123322030321122110131222011311213022113330322211133000102122
+Sum and multiplication incorrect
+
+For input  13220140034011333223242020104102311220201230241430144043334230421 10124412144 5
+Output received  output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+13220140034011333223242020104102311220201230241430144104014143120
+
+Output shouldbe  13220140034011333223242020104102311220201230241430144104014143120 140024430410230411440200441443104423440222134030143110113231333103020410224
+Sum and multiplication incorrect
+
+For input  5107724276472111551083710517552420751115402782844151264548658613466043658573870413811850738224266843 44443733210821131050426302831111468601720205115732 9
+Output received  output: 5 : 0
+
+output: 7 : 0
+
+output: 6 : 1
+
+output: 3 : 1
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 8 : 1
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 5 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+5107724276472111551083710517552420751115402782844205718382870534607104185876811525381552558430383675
+
+Output shouldbe  5107724276472111551083710517552420751115402782844205718382870534607104185876811525381552558430383675 250376670068683581126868385302674835662384580381283705558311510524338310767233233221416175840678682886506484200754636615517507074418632712677100713586
+Sum and multiplication incorrect
+
+For input  222021211220210200000010020010222221110220002111001010021220120200200200101000 11102101201120012002120122122010220 3
+Output received  output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+222021211220210200000010020010222221110220020220102211212002200021100022111220
+
+Output shouldbe  222021211220210200000010020010222221110220020220102211212002200021100022111220 11022021000222010010112021210121010000212222201011101000002102220021122012022222001121220000001220112221102220000
+Sum and multiplication incorrect
+
+For input  111020211010110112002112100221120211220020202101120122120202021102222121200121121210222222220222 2001211222111200211111112101221022200210120020021200200200022202111200210200212 3
+Output received  output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+111020211010110121011101100110021200101210011022220100101022111201200022100221101022200210121211
+
+Output shouldbe  111020211010110121011101100110021200101210011022220100101022111201200022100221101022200210121211 1000102011122101011111022121220222101221000222011110202212002100001200212101022101220000020001021112120111112012202210221200102022202102220021122200022100122012211200210121011
+Sum and multiplication incorrect
+
+For input  73410353204216225650425516404643177 670 8
+Output received  output: 7 : 0
+
+output: 6 : 1
+
+output: 0 : 1
+
+73410353204216225650425516404644067
+
+Output shouldbe  73410353204216225650425516404644067 63113212131532220604656467360110225110
+Sum and multiplication incorrect
+
+For input  34402240433342034244143001121334330034204422040032404441301010422112033330124442243102 3220430344031030223121210223023033100 5
+Output received  output: 2 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+34402240433342034244143001121334330034204422040041130422200042002340210040403020331202
+
+Output shouldbe  34402240433342034244143001121334330034204422040041130422200042002340210040403020331202 234030121443201040014002402043041441342340133203033441223103022034104031222404024323403404404400200243122320133413413231200
+Sum and multiplication incorrect
+
+For input  462020654630464053133005656656062424140523112553456233023102151042603 15063 7
+Output received  output: 6 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+462020654630464053133005656656062424140523112553456233023102151060666
+
+Output shouldbe  462020654630464053133005656656062424140523112553456233023102151060666 11330005434565614046365534352542346230553242311433344260420020462146303652
+Sum and multiplication incorrect
+
+For input  94468610947576416090376691315764785105188201779869405440684130558088667109989108423809394505 95 10
+Output received  output: 0 : 1
+
+output: 0 : 1
+
+94468610947576416090376691315764785105188201779869405440684130558088667109989108423809394600
+
+Output shouldbe  94468610947576416090376691315764785105188201779869405440684130558088667109989108423809394600 8974518040019759528585785674997654584992879169087593516864992403018423375448965300261892477975
+Sum and multiplication incorrect
+
+For input  211021231131203032131200023211030120210011312100330102011011332321112122210113130113113333131233211 1020112002211133131331 4
+Output received  output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+211021231131203032131200023211030120210011312100330102011011332321112122210120210231122210331031202
+
+Output shouldbe  211021231131203032131200023211030120210011312100330102011011332321112122210120210231122210331031202 221333231332330011223023111022001012133033312101232020203331101001133132023323221100133132323210013312102230121311013101
+Sum and multiplication incorrect
+
+For input  52523435415235231262430652153400254342326433635461052211541354004325140204650355255055562055612316 2320330541451651546202553500004064342231014506202020134433025251613664361416 7
+Output received  output: 5 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 5 : 1
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+52523435415235231262433302514242036324205636522261056306213615022134342225115121313340506053304035
+
+Output shouldbe  52523435415235231262433302514242036324205636522261056306213615022134342225115121313340506053304035 162212111410011012502245516564366315254362666354635122231521620324526504325451516116561351054130405204223345205501304500363256635211651113064622260442045560013015302420353331
+Sum and multiplication incorrect
+
+For input  3213113210010322202113230310230332201133133300111321213031111132212210323203210220113102 302232210203121230002200032112333020003020200102323131203132123113203213332213300333 4
+Output received  output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+3220022102221131330003233110323111200213202320312030202222320331001330133023203100020101
+
+Output shouldbe  3220022102221131330003233110323111200213202320312030202222320331001330133023203100020101 2313120301101000103311023112211103231021003113221310220103102213103201313021113310323320021300202123013202320121112031103223302100210231311120010232301332300212331022122232
+Sum and multiplication incorrect
+
+For input  1112122011001111020121212012021000112021222020110101021002211021210022000 1111210202122012220002110022022200202021002021211 3
+Output received  output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+1112122011001111020121220201001210011111212022220200120210120112212120211
+
+Output shouldbe  1112122011001111020121220201001210011111212022220200120210120112212120211 2022220222011121200002122212000200121002020001011221121222000012111010211110101112011220202012101112022002211110102112000
+Sum and multiplication incorrect
+
+For input  630553354701514000064767771042646165702374214424662162315623761701305112763270604212216 4564721131762131661767640004104624057614772127364217 8
+Output received  output: 5 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 7 : 0
+
+output: 2 : 0
+
+output: 6 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 6 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+630553354701514000064767771042646172467315346407014044305463766006131172600262733576435
+
+Output shouldbe  630553354701514000064767771042646172467315346407014044305463766006131172600262733576435 3614411205424217007140245651447145645076201705630416147403077152700355121252447032711723612232622257740553416734656162220007765360360225522
+Sum and multiplication incorrect
+
+For input  33880082277020871045232557836000441578646661471341607213153101040287 618238276563340012770736883275722183018844454512424510077806340 9
+Output received  output: 7 : 0
+
+output: 3 : 1
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 7 : 0
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 5 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 6 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 7 : 0
+
+33880711526307544385245438673883727411840681425806220637663178846637
+
+Output shouldbe  33880711526307544385245438673883727411840681425806220637663178846637 23347220643010507137058723445867614570883573401008407861740431465840132884725843012876772116615453670245871761845710341333120088210
+Sum and multiplication incorrect
+
+For input  213140014214132000003121133402232340301022333042311220100304032202120030041 202012314313230210044400000222310 5
+Output received  output: 1 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+213140014214132000003121133402232340301023040110131033331014132102120302401
+
+Output shouldbe  213140014214132000003121133402232340301023040110131033331014132102120302401 44123131444222310332131242234204220014240403410313013142422113021424200230332034024222402232110320000030210
+Sum and multiplication incorrect
+
+For input  1022001200021001120210011022202011210101012010021010200111011212002000210110202012210201022200 210110201222210200222122200011020101010200021210120 3
+Output received  output: 0 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+1022001200021001120210011022202011210101012220201212200021212211201200221201010100111000010020
+
+Output shouldbe  1022001200021001120210011022202011210101012220201212200021212211201200221201010100111000010020 1000212211220121000111022121222020122222210012120200011212210210011120112112210201002110001002000100002100020011000000012010010212220100010211000
+Sum and multiplication incorrect
+
+For input  1100432414223232404555522531425422212450443144533322500434155 140121343052204400451022401424431450335 6
+Output received  output: 4 : 1
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+1100432414223232405000103053212514421251334211335151332324534
+
+Output shouldbe  1100432414223232405000103053212514421251334211335151332324534 154251454224042112202354144534445451552043044241330343044321410143051400440324541340252121111023021
+Sum and multiplication incorrect
+
+For input  2002222120222202221221111101010001002122022022200 100111 3
+Output received  output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+2002222120222202221221111101010001002122022200011
+
+Output shouldbe  2002222120222202221221111101010001002122022200011 202000022010121212201222201210212211102001002220011200
+Sum and multiplication incorrect
+
+For input  1456155401536566221134253652466523625045626033561643041515432332424002640622015203521255522421452320 60523600066421636644125266250104226110444530354136301462461524114010 7
+Output received  output: 0 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 6 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 5 : 1
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 5 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+1456155401536566221134253652466614451646025455531620200115012436653113415452402343123051314245566330
+
+Output shouldbe  1456155401536566221134253652466614451646025455531620200115012436653113415452402343123051314245566330 132230436151344645143355356024155300416135153401310224030405560361061504034021246363065303655526342226222542614003526626532535213304030440034202560563341144365415633200
+Sum and multiplication incorrect
+
+For input  4002431023203003300123224344010001213402333212244042003412132211301321040110 2 5
+Output received  output: 2 : 0
+
+4002431023203003300123224344010001213402333212244042003412132211301321040112
+
+Output shouldbe  4002431023203003300123224344010001213402333212244042003412132211301321040112 13010412101411012100302004243020002432310221430043134012324314423103142130220
+Sum and multiplication incorrect
+
+For input  32311103331031212 310 4
+Output received  output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+32311103331032122
+
+Output shouldbe  32311103331032122 30003110031233002320
+Sum and multiplication incorrect
+
+For input  20220211122222211020101000112222020220021020112 2000101102000211210002021112110012102202222012 3
+Output received  output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+22221020002000200000110022002102110100001012201
+
+Output shouldbe  22221020002000200000110022002102110100001012201 111221100100201101101021112002102121100212102202111011220002020002201111112212020222222200121
+Sum and multiplication incorrect
+
+For input  1100011010111101011111111000001111000110111010100111100011101001101111011111010101101000 1000111111010000100101000101 2
+Output received  output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+1100011010111101011111111000001111000110111010100111100011110010101110101111111010101101
+
+Output shouldbe  1100011010111101011111111000001111000110111010100111100011110010101110101111111010101101 1101111101001011100011101010101111000000001111010100000001110101000011000110011010101110101100110111100110100001000
+Sum and multiplication incorrect
+
+For input  14224030430442300014143424000 404200032120012 5
+Output received  output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 2 : 1
+
+14224030430443204214231044012
+
+Output shouldbe  14224030430443204214231044012 12433041102112011130420220242020330312143000
+Sum and multiplication incorrect
+
+For input  51133000125412513356214003543641152660505242564115441532 44130006612 7
+Output received  output: 4 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+51133000125412513356214003543641152660505242641245451444
+
+Output shouldbe  51133000125412513356214003543641152660505242641245451444 3254126433464454130630552433610020202316104563205415364245053065514
+Sum and multiplication incorrect
+
+For input  228761134450694905458910587915878092533923127960110375496981906325456683181364 9394269780004371202166719930610618415721 10
+Output received  output: 5 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 9 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 6 : 1
+
+output: 2 : 0
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 9 : 0
+
+output: 9 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 7 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 4 : 1
+
+output: 7 : 1
+
+output: 7 : 1
+
+output: 9 : 0
+
+output: 3 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+228761134450694905458910587915878092543317397740114746699148626256067301597085
+
+Output shouldbe  228761134450694905458910587915878092543317397740114746699148626256067301597085 2149043812209680011519172954714324752321484915841018314972110448796147945251549627888463949775009971880535911791823444
+Sum and multiplication incorrect
+
+For input  1010001010011010001001000100 111101 2
+Output received  output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+1010001010011010001010000001
+
+Output shouldbe  1010001010011010001010000001 1001101011111010111010101000110100
+Sum and multiplication incorrect
+
+For input  10552600262353676705617316507756132 503073262006457033774 8
+Output received  output: 6 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 7 : 1
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+10552600262354402001101325167012126
+
+Output shouldbe  10552600262354402001101325167012126 5375665231062311632055135564666153665465262647563037230
+Sum and multiplication incorrect
+
+For input  103032212032101113200303022332001110013333200000222102220212320320031110231002331030003212330032130 120330201121300213012001101202221103302 4
+Output received  output: 2 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+103032212032101113200303022332001110013333200000222102220213101310232232131222003031111021211202032
+
+Output shouldbe  103032212032101113200303022332001110013333200000222102220213101310232232131222003031111021211202032 13133222003130322011033211333023120101222010203120303010222313300132112232301101030232033212000201300203233110223310032231010123101211320
+Sum and multiplication incorrect
+
+For input  5545441150033404420003131032505152004054204441325313502451211534332142353315350503 1243 6
+Output received  output: 0 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+5545441150033404420003131032505152004054204441325313502451211534332142353315352150
+
+Output shouldbe  5545441150033404420003131032505152004054204441325313502451211534332142353315352150 12412533523221343515304425203230130110022033551150030505333425324241031212233251252513
+Sum and multiplication incorrect
+
+For input  2212020201210001210000121110021212022010020202220221022201021002010110201 21102122220000012010121201220 3
+Output received  output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+2212020201210001210000121110021212022010021001100121012201110012202012121
+
+Output shouldbe  2212020201210001210000121110021212022010021001100121012201110012202012121 210021010001110000201011121221202002101100202010201221122110122202212021212102111021002202222021122220
+Sum and multiplication incorrect
+
+For input  22102000220021112020100021201112212120121021112000122122112221202010111202000020211210212121121020 20100210100000100210201111001101202101121201102000212221200000220122101222220011202101120 3
+Output received  output: 0 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+22102001010122022120100122112021100122000000220122101001120211200210112122122122211201001100222210
+
+Output shouldbe  22102001010122022120100122112021100122000000220122101001120211200210112122122122211201001100222210 1222111112002020220112201010000210121210110102100211001010000101020001100021020021222011221201021200221100012221022102100001220112000202011210101100222000200012112120112220221011200020100
+Sum and multiplication incorrect
+
+For input  578236777020343624624431442752573811384761308525627063116845145776800255123247 877537713750731412526461313718657064177750136178 9
+Output received  output: 6 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 5 : 1
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 6 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 6 : 1
+
+output: 5 : 1
+
+578236777020343624624431442753562450208622141038254534431664813852078115260436
+
+Output shouldbe  578236777020343624624431442753562450208622141038254534431664813852078115260436 571425217161582822681600523506320006443621044214215162132246745826045166231133058015884633103465712438751404740676605283340662
+Sum and multiplication incorrect
+
+For input  330001143204523432051135313205112211420004212031105220244013412534512405344114 245354110001244420250120243310105402414131445050125230152245015040151441 6
+Output received  output: 5 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+330001433003033433340000003325355521525411030202554310413244005223531445535555
+
+Output shouldbe  330001433003033433340000003325355521525411030202554310413244005223531445535555 135145315551415102323504245144542105405044200331334453021134004311550053231542054430123134304143001153345214323402215235401223554111203155305233501554
+Sum and multiplication incorrect
+
+For input  3256097814592006041183651186624697854048458491565 13 10
+Output received  output: 8 : 0
+
+output: 7 : 0
+
+3256097814592006041183651186624697854048458491578
+
+Output shouldbe  3256097814592006041183651186624697854048458491578 42329271589696078535387465426121072102629960390345
+Sum and multiplication incorrect
+
+For input  101000110010010101011000010000111100010010000101011101100001001101111011011100 11111100100010110 2
+Output received  output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+101000110010010101011000010000111100010010000101011101100001101101011111110010
+
+Output shouldbe  101000110010010101011000010000111100010010000101011101100001101101011111110010 10100000111100010101100000101001101000100011111100010100101100100100101000010110010001011101000
+Sum and multiplication incorrect
+
+For input  78800690977896179380 4227235647 10
+Output received  output: 7 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+78800690982123415027
+
+Output shouldbe  78800690982123415027 333109089909994018540242358860
+Sum and multiplication incorrect
+
+For input  123400053434235203252140410242553321154123540321443413121145040002021532315101021430 15320150314200504410323003524 6
+Output received  output: 4 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+123400053434235203252140410242553321154123540321443413140505230320222441125424025354
+
+Output shouldbe  123400053434235203252140410242553321154123540321443413140505230320222441125424025354 2433041420331453204213543305121155555531401304202522025422421510051144522422204050440135522403423142552023421000
+Sum and multiplication incorrect
+
+For input  40431131133432434424243 11431434001213341411432 5
+Output received  output: 0 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+102413120140201331341230
+
+Output shouldbe  102413120140201331341230 1040040413214242242413131102302000441214034131
+Sum and multiplication incorrect
+
+For input  12020413 13231 5
+Output received  output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+12034144
+
+Output shouldbe  12034144 220204311003
+Sum and multiplication incorrect
+
+For input  35294552247974417758357248620708042756845327522708036274283555269985 848235802183931752700464055129427191478200402521226512060 10
+Output received  output: 5 : 0
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 4 : 1
+
+output: 7 : 0
+
+output: 9 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 0 : 0
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 7 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 5 : 1
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 8 : 1
+
+35294552248822653560541180373408506811974754714186236676804781782045
+
+Output shouldbe  35294552248822653560541180373408506811974754714186236676804781782045 29938102838783271978491241287367842807628263095551230129961149024075546486024538142977422813824813747207820522760513158519100
+Sum and multiplication incorrect
+
+For input  11010000000100010001110001001 100110101011 2
+Output received  output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+11010000000100010110100110100
+
+Output shouldbe  11010000000100010110100110100 1111101101110010101011011000110110000011
+Sum and multiplication incorrect
+
+For input  280276488853032177027071335713844266546338638714168146302546066815088126511655 585114157458217387483426185544840313215443052024778078325 9
+Output received  output: 1 : 1
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 6 : 1
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 8 : 0
+
+output: 4 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 8 : 0
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 6 : 1
+
+output: 6 : 0
+
+280276488853032177027666450872413485044833166010724086615762520867124015601081
+
+Output shouldbe  280276488853032177027666450872413485044833166010724086615762520867124015601081 181863331461828036220811843055263580118444051250647201630173745754534282254873303860808767513233867262030762408035144655803477082806517
+Sum and multiplication incorrect
+
+For input  130430345114113550544450551402024022432101513 4400314213332440211421212515 6
+Output received  output: 2 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+130430345114113555345205205134504234253314432
+
+Output shouldbe  130430345114113555345205205134504234253314432 1103352545510130151550230502440444142324000333122222211203505302324254043
+Sum and multiplication incorrect
+
+For input  5540 4452 7
+Output received  output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+13322
+
+Output shouldbe  13322 36056310
+Sum and multiplication incorrect
+
+For input  21100133330332102103311202313331031310230132202102000112320220323202211311111310333233002031302 1322331122110122313012103123301103112000002232030113310101213030313310 4
+Output received  output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+21100133330332102103311210302322220021013111220211130020023332323211110001231221101112033011212
+
+Output shouldbe  21100133330332102103311210302322220021013111220211130020023332323211110001231221101112033011212 101302111130111313230230131322013210212211100133011033122103032023021010123211001201222331311202213303123031332223033300312220131323103210123133221102103023001022220
+Sum and multiplication incorrect
+
+For input  101412033124123143142010223033240404110024140013311403401004110314 13232200134443100230 5
+Output received  output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+101412033124123143142010223033240404110024140032044104041002211044
+
+Output shouldbe  101412033124123143142010223033240404110024140032044104041002211044 1404132202412004334233220444224301114141211241211114043340333420021224340031444333320
+Sum and multiplication incorrect
+
+For input  201033040322352101355223302252303521252242021030121324534355543305555130553555 34223101512050025135104531411350552312433030240141453341300100103343313544 6
+Output received  output: 3 : 1
+
+output: 4 : 1
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+201111303424304151424402411224115312244554454100401510432141243410102514311543
+
+Output shouldbe  201111303424304151424402411224115312244554454100401510432141243410102514311543 11325352453401235244350414101011522040522345120004302153125330031300345303040544004215403132044541544543533042453032134552131032424411115113345124310012
+Sum and multiplication incorrect
+
+For input  223314412230324040024024410003311003300334141002412342101141013100412121203324201404234104 43042333240212230313021211434124231121 5
+Output received  output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+223314412230324040024024410003311003300334141002412440144024303313142434230041141034020230
+
+Output shouldbe  223314412230324040024024410003311003300334141002412440144024303313142434230041141034020230 21401100143010344310340041201231442401411332123013411100413442444424424333141243113012412140131100322413221120434310132324111134
+Sum and multiplication incorrect
+
+For input  22005833056264226865614387773741668774552714662213510158006810474564033255317365277654566 447822348880750255523377073230666877820056201482142017551478833224048834 9
+Output received  output: 1 : 1
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 7 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 0 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 6 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 0 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 5 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 6 : 1
+
+output: 4 : 0
+
+output: 6 : 1
+
+output: 7 : 1
+
+output: 7 : 1
+
+output: 4 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 5 : 1
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 4 : 1
+
+22005833056264227424536747764602035408040788002881488078064112066716051816807308512714511
+
+Output shouldbe  22005833056264227424536747764602035408040788002881488078064112066716051816807308512714511 11078286625244447585575324803343705361760583668044302056768668686368036347620844707032421455184736161884520372630545706038871405718627775376323088652258417862086
+Sum and multiplication incorrect
+
+For input  2640364032565413650253660316212536314630433112633400502402316504313241460320152334046641100433 13123622422041464042 7
+Output received  output: 5 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+2640364032565413650253660316212536314630433112633400502402316504313241460333306256502012564505
+
+Output shouldbe  2640364032565413650253660316212536314630433112633400502402316504313241460333306256502012564505 41656234123144400532503150561132424321403560456543006426023664102053316132054240304000130343205604354135613363146
+Sum and multiplication incorrect
+
+For input  45230664122466530723302327525022021531163274237532144157330207354227024 16767130 8
+Output received  output: 4 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 6 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 7 : 0
+
+45230664122466530723302327525022021531163274237532144157330207373216154
+
+Output shouldbe  45230664122466530723302327525022021531163274237532144157330207373216154 1056653401014472657015606166473463641716262646144547227002464242554433426467340
+Sum and multiplication incorrect
+
+For input  1463830637637002428581478474512261122304038501104103277 370875814143385067871817777302041 9
+Output received  output: 8 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 1 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 2 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 6 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 6 : 1
+
+output: 8 : 0
+
+1463830637637002428581860461426414517373021418882405328
+
+Output shouldbe  1463830637637002428581860461426414517373021418882405328 568728115707826825805570342312817100722670458047578560620608878267147572044178336221687
+Sum and multiplication incorrect
+
+For input  1010100010110010110011010101000010111010111110011001011010110100001100111110111111111111101101 101001101101011010001000001101110011011011010101010000100001111010 2
+Output received  output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+1010100010110010110011010101101100101000011000100001101000100111101000010100010000100001100111
+
+Output shouldbe  1010100010110010110011010101101100101000011000100001101000100111101000010100010000100001100111 110110111110001010100000101110101011010010110010110001110101111101001011101100010100100100001000010011101011010010100000010011111001000110010000101111011110010
+Sum and multiplication incorrect
+
+For input  45005410210333441035245322 430135024412331034155 6
+Output received  output: 1 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+45010240345402253410323521
+
+Output shouldbe  45010240345402253410323521 33450113323541011133125501415503105313442451034
+Sum and multiplication incorrect
+
+For input  22411022122023142323041134210122333234232031234134320110413343130113200231244222 144133321323440400110410320432143420 5
+Output received  output: 2 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+22411022122023142323041134210122333234232031433323141434404243241024021213443142
+
+Output shouldbe  22411022122023142323041134210122333234232031433323141434404243241024021213443142 10014020103424242311034331211320124224111010341343043144040001442100024441443332234414411442210004122413431110140240
+Sum and multiplication incorrect
+
+For input  124110410143042132003422214023204122341403310 2344114011132144023302340220 5
+Output received  output: 0 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+124110410143042134403041230210403201144244030
+
+Output shouldbe  124110410143042134403041230210403201144244030 414312400301441123224224203421313334103314244131423242240234420230233200
+Sum and multiplication incorrect
+
+For input  525226521315260112341632006130423256650043661514533103661163140066 41204112006555124012345506246 7
+Output received  output: 5 : 1
+
+output: 4 : 1
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 4 : 1
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 1
+
+525226521315260112341632006130423260021251103524421231003541646345
+
+Output shouldbe  525226521315260112341632006130423260021251103524421231003541646345 31402532024165113322545333146011500205055534540322530304406233430315562110530526022326620545321
+Sum and multiplication incorrect
+
+For input  2014424143313303113321013111142323010430002 133122044221024124304103001 5
+Output received  output: 3 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+2014424143313303301443112332222002320033003
+
+Output shouldbe  2014424143313303301443112332222002320033003 330003321230101301343121012230033044410034331314421120434133014141002
+Sum and multiplication incorrect
+
+For input  40234232104241021310141231133241203310314000014040042203343424 41441200020311034102122322402041231100004001122431114 5
+Output received  output: 3 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+40234232201232221331002320240414031212410231114044043331330043
+
+Output shouldbe  40234232201232221331002320240414031212410231114044043331330043 3301310410302141100100240142203214404033320342311440442331440133443012144244323104222243040310141111313101040322001
+Sum and multiplication incorrect
+
+For input  5756916460089707389015857972122976814801183478131098401 85580373089818203555 10
+Output received  output: 6 : 0
+
+output: 5 : 0
+
+output: 9 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 9 : 0
+
+output: 4 : 0
+
+output: 9 : 0
+
+output: 7 : 1
+
+output: 6 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 5 : 1
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+5756916460089707389015857972122976900381556567949301956
+
+Output shouldbe  5756916460089707389015857972122976900381556567949301956 492679058501392666274300599996321860144148249944254978550965460156753015555
+Sum and multiplication incorrect
+
+For input  8823045664053643525085732117127717501846660867725475651386856750116780375006502110275 6444445033546181848058102238184323455142015143432368407771008535615058813526 9
+Output received  output: 2 : 1
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 6 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 8 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 8 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 7 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 8 : 0
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 1 : 0
+
+output: 6 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 8 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+8823045671508188558643024066186820741142084433867501804830336257887800021622562023812
+
+Output shouldbe  8823045671508188558643024066186820741142084433867501804830336257887800021622562023812 63861781613862823123652744608780412163845675116270476720602833077646568871124787257835578417417712616608544485873016213321553370654370688657128210334680057336313
+Sum and multiplication incorrect
+
+For input  94026088393401523387127816860838694038545236428680036119948161994794502198373411513 61078058596468418484713177656969201157119971144188765188180091923410 10
+Output received  output: 3 : 0
+
+output: 2 : 0
+
+output: 9 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 6 : 1
+
+output: 4 : 0
+
+output: 8 : 0
+
+output: 7 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 9 : 0
+
+output: 6 : 0
+
+output: 9 : 0
+
+output: 5 : 1
+
+output: 5 : 1
+
+output: 3 : 1
+
+output: 8 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 9 : 0
+
+output: 1 : 1
+
+output: 9 : 1
+
+output: 9 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 3 : 1
+
+output: 9 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 7 : 1
+
+output: 9 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 9 : 0
+
+output: 8 : 0
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 7 : 1
+
+output: 1 : 1
+
+output: 7 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 9 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 6 : 1
+
+output: 8 : 0
+
+output: 1 : 0
+
+output: 5 : 1
+
+output: 6 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 8 : 0
+
+94026088393401584465186413329257178751722893397881193239919306183559690378465334923
+
+Output shouldbe  94026088393401584465186413329257178751722893397881193239919306183559690378465334923 5742930936488897303043401632970536587264975975259395630381368909753790340680873289495885490959118512567443118299597670851376555499051350496779608219330
+Sum and multiplication incorrect
+
+For input  20211111000100110201101202210010112200102212102120222112121 2010022102110112022122201201221101 3
+Output received  output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+20211111000100110201101211220102222010222012002022201110222
+
+Output shouldbe  20211111000100110201101211220102222010222012002022201110222 112111121000221000102122001200210112112001110201021210100200212012011001211021010000121012221
+Sum and multiplication incorrect
+
+For input  422332422143430441402442400202210404213203242412411211431411044033144314 302432412014421330203242140221010231332114042112113 5
+Output received  output: 2 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+422332422143430441403300333114230331043412040103132222213243213130311432
+
+Output shouldbe  422332422143430441403300333114230331043412040103132222213243213130311432 240122230340342422303114322031222243340041134121140111314220101224313320203011302403441010102133311244131044343314134302042
+Sum and multiplication incorrect
+
+For input  5662465029818608537942165178445743339337262771463173838338070297302448593862740 65621 10
+Output received  output: 1 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 8 : 0
+
+output: 2 : 1
+
+5662465029818608537942165178445743339337262771463173838338070297302448593928361
+
+Output shouldbe  5662465029818608537942165178445743339337262771463173838338070297302448593928361 371576617721726910868302821174788123670650520326184930445582510979283979177866861540
+Sum and multiplication incorrect
+
+For input  5432522251544235203212430514245004254015414350224340533311121551431340221 51350422332214342153522500205 6
+Output received  output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 1
+
+5432522251544235203212430514245004254015414442015203305525504145354240430
+
+Output shouldbe  5432522251544235203212430514245004254015414442015203305525504145354240430 502211255115304200451001135555433030133110442431040434355135221053131201211403523311330130520555010145
+Sum and multiplication incorrect
+
+For input  10101101001100001011100101000110101110111100000000011111101010111100110101111110100 100011000010110100111110110011101010111000010000 2
+Output received  output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+10101101001100001011100101000110110011010100010111000111100001011010001101000000100
+
+Output shouldbe  10101101001100001011100101000110110011010100010111000111100001011010001101000000100 1011110110101010100000101100000110111111111001000111011011101001100100111100001101101101100100100111111001100111101001011101000000
+Sum and multiplication incorrect
+
+For input  44242421202443323410301404242334044431141144223 110114310334034023 5
+Output received  output: 1 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+44242421202443323410301404242444214242030233301
+
+Output shouldbe  44242421202443323410301404242444214242030233301 10434123211043443124011322324414200214244224301141443322330330234
+Sum and multiplication incorrect
+
+For input  18162022067450002465547173240135587704778601886706616345361388602732411313887080376737 835886 9
+Output received  output: 4 : 1
+
+output: 3 : 1
+
+output: 7 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+18162022067450002465547173240135587704778601886706616345361388602732411313887081323734
+
+Output shouldbe  18162022067450002465547173240135587704778601886706616345361388602732411313887081323734 17044836170332406751310100651446325351203233211827827012551554115263150783680147600832123466
+Sum and multiplication incorrect
+
+For input  76514580334830813682 5145857338272455 9
+Output received  output: 7 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 0 : 1
+
+76520736303270186247
+
+Output shouldbe  76520736303270186247 438541155303351657637421185054330261
+Sum and multiplication incorrect
+
+For input  1100110011101001110011000010010101011011100011 1 2
+Output received  output: 0 : 1
+
+1100110011101001110011000010010101011011100100
+
+Output shouldbe  1100110011101001110011000010010101011011100100 1100110011101001110011000010010101011011100011
+Sum and multiplication incorrect
+
+For input  301015154345225113365532534523663055325440226065125111256114425244536224342105661204164256025406011 204050322445466616152055462423425204154454642126436336411013242324251616540524022442563 7
+Output received  output: 4 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 0 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 4 : 1
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 3 : 0
+
+output: 6 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 4 : 1
+
+output: 1 : 0
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 4 : 0
+
+output: 4 : 1
+
+output: 4 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 6 : 0
+
+output: 1 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 4 : 0
+
+301015154345432164021311334443145144121163654302312566231244164614250240614433243124035113051151604
+
+Output shouldbe  301015154345432164021311334443145144121163654302312566231244164614250240614433243124035113051151604 62031646133426123542126336345116400343536460334404564252216324320533415355026511331044532305501315610625522454401135520354646066641323361024506452336326403414250432115540321015022035523
+Sum and multiplication incorrect
+
+For input  174051130627411421517716112527020663657746262366712341161717137574674045537002672 44030100527316512470153673063437226206774201072355455626176767 8
+Output received  output: 1 : 1
+
+output: 6 : 1
+
+output: 6 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 5 : 1
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 2 : 1
+
+output: 7 : 0
+
+output: 6 : 1
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 7 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 2 : 1
+
+output: 5 : 1
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 3 : 1
+
+output: 6 : 0
+
+output: 7 : 0
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 6 : 1
+
+output: 5 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 6 : 0
+
+output: 4 : 0
+
+output: 7 : 0
+
+output: 3 : 1
+
+output: 6 : 0
+
+174051130627411421563746213256337376350122155452351567370713340667251523365201661
+
+Output shouldbe  174051130627411421563746213256337376350122155452351567370713340667251523365201661 10570573661136421632443604644531203760313630624442112530070522222770272305663252630472012314466507530453771047507365402124176055121413020454166
+Sum and multiplication incorrect
+
+For input  300013112222001001001133213312121122330323202111102113220001003312313 11102313211231113211312223313010320222200131311331 4
+Output received  output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 3 : 1
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+300013112222001001012302133130012302202302032030113100102201201230310
+
+Output shouldbe  300013112222001001012302133130012302202302032030113100102201201230310 3332300220110232132212121332111133001112000031021103000230132002113002022001303323221121023000332231030102210001311123
+Sum and multiplication incorrect
+
+For input  10101001011010010011000101001101000111000001110011000011000110011001011111011101110110 10100101111101001001101011101011010111110111111111110010000010110011011 2
+Output received  output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 1 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+10101001011010100111110100110110010100011111001110000010000110010111101111110100010001
+
+Output shouldbe  10101001011010100111110100110110010100011111001110000010000110010111101111110100010001 110110111010010101010111000111010111011000010001010111010000011011111011001011100001011011110001010111100111011100101110000011011001010110000010001001110010
+Sum and multiplication incorrect
+
+For input  874648776035956670589046801467 16499145614494 10
+Output received  output: 1 : 1
+
+output: 6 : 1
+
+output: 9 : 0
+
+output: 5 : 0
+
+output: 1 : 0
+
+output: 4 : 1
+
+output: 2 : 1
+
+output: 9 : 0
+
+output: 1 : 0
+
+output: 8 : 1
+
+output: 8 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 8 : 0
+
+874648776035956687088192415961
+
+Output shouldbe  874648776035956687088192415961 14430957517356199303205076926135970935662698
+Sum and multiplication incorrect
+
+For input  4636247840352830083724287437483115163188720632746286583667073603171622005014603808077103453107532844 70654211508013677506182723826088285017740652528110643408234785188531285416032352054 9
+Output received  output: 8 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 3 : 0
+
+output: 8 : 0
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 7 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 4 : 1
+
+output: 1 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 8 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 7 : 0
+
+output: 7 : 0
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 2 : 1
+
+output: 1 : 1
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 8 : 1
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 4 : 1
+
+output: 8 : 0
+
+output: 8 : 0
+
+output: 5 : 0
+
+output: 5 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 5 : 1
+
+output: 2 : 1
+
+output: 8 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 8 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 6 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 5 : 0
+
+output: 8 : 0
+
+output: 7 : 0
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 6 : 1
+
+4636247840352830164478510046506803670382544558845582612517736232282365414250500107618388870140885008
+
+Output shouldbe  4636247840352830164478510046506803670382544558845582612517736232282365414250500107618388870140885008 363302003420238123420683731028412834286071576783501503441806217068772755123178256565216844731723800543264320208840064485556234626250535601065802637114458423158424651516042438310828217
+Sum and multiplication incorrect
+
+For input  355125235300243435005223410044220 41255012531444241502044424 6
+Output received  output: 4 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 3 : 1
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+355125320555300410453505312133044
+
+Output shouldbe  355125320555300410453505312133044 24524101240202230111453140321014153125150421302021355530120
+Sum and multiplication incorrect
+
+For input  503552405523315025121335254513434101315210041001543211 1023211141405051253315332220530415000543252 6
+Output received  output: 3 : 0
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 5 : 1
+
+output: 2 : 0
+
+output: 0 : 0
+
+output: 0 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 5 : 0
+
+output: 0 : 0
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 3 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 3 : 1
+
+output: 5 : 0
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 5 : 1
+
+output: 3 : 0
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 2 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+503552405524342240303144350211153433540140500002530503
+
+Output shouldbe  503552405524342240303144350211153433540140500002530503 525023555353021425013353131222144142112515021234125443301254323034034225051400313444335400315012
+Sum and multiplication incorrect
+
+For input  4332011444113041232013322323442133320102344032411403013110112000403211341410401040 2122023041202022041140103303201323404310020140114343214223 5
+Output received  output: 3 : 0
+
+output: 1 : 1
+
+output: 3 : 0
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 4 : 0
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 1 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 2 : 0
+
+output: 4 : 0
+
+output: 0 : 0
+
+output: 1 : 0
+
+output: 3 : 0
+
+output: 1 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 0
+
+output: 3 : 0
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 1 : 0
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 3 : 0
+
+output: 2 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 4 : 1
+
+output: 4 : 0
+
+output: 4 : 0
+
+output: 2 : 0
+
+output: 1 : 0
+
+output: 2 : 0
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 3 : 1
+
+output: 2 : 0
+
+output: 0 : 1
+
+output: 2 : 1
+
+output: 0 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+output: 0 : 1
+
+4332011444113041232013330001020230022124440223020211214434021310423402011304120313
+
+Output shouldbe  4332011444113041232013330001020230022124440223020211214434021310423402011304120313 20414412210220002131133322321030310423242431040434324411002041111143224430002421032413141033302231310421040443431121343020312444222334203020
+Sum and multiplication incorrect
+
+For input  37242267014125651326113653713100210650316705 53573732553175632354366542251425 8
+Output received  output: 2 : 1
+
+output: 3 : 0
+
+output: 3 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 2 : 0
+
+output: 1 : 1
+
+output: 4 : 1
+
+output: 7 : 0
+
+output: 7 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 5 : 0
+
+output: 4 : 0
+
+output: 5 : 1
+
+output: 1 : 1
+
+output: 5 : 1
+
+output: 0 : 1
+
+output: 7 : 0
+
+output: 6 : 0
+
+output: 6 : 0
+
+output: 0 : 1
+
+output: 6 : 0
+
+output: 2 : 1
+
+output: 5 : 0
+
+output: 4 : 1
+
+output: 4 : 1
+
+output: 1 : 1
+
+output: 0 : 1
+
+37242267014201445260667051545454577412570332
+
+Output shouldbe  37242267014201445260667051545454577412570332 2531677456016353021111026536064462365476323026074146142071172446635065350051
+Sum and multiplication incorrect
+
+****************************************************************************************************************** 
+Web Submission Script Complete.

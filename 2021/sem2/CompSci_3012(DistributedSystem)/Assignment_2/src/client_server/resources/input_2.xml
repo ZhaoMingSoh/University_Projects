@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <title>The WordPress.com Blog</title>
+  <subtitle>The latest news on WordPress.com and the WordPress community.</subtitle>
+  <link>https://wordpress.com/blog</link>
+  <updated>2021-08-31T15:08:47Z</updated>
+  <author>
+    <name />
+  </author>
+  <id>http://wordpress.com/blog/feed/atom/</id>
+  <entry>
+    <title>Expanded Button Formatting, New Spacing Controls, and Drag-and-Drop for List View Now in Block Editor</title>
+    <link>https://wordpress.com/blog/2021/08/31/block-editor-updates-7/</link>
+    <id>http://en.blog.wordpress.com/?p=45042</id>
+    <author>
+      <name>Seth McLellan</name>
+    </author>
+    <updated>2021-08-31T15:08:47Z</updated>
+    <summary>This month, our team released features in the block editor that give your site a little breathing room: spacing controls for buttons and paragraphs.</summary>
+  </entry>
+  <entry>
+    <title>Meet the Customers We&amp;#8217;re Featuring at the WordPress.com Growth Summit</title>
+    <link>https://wordpress.com/blog/2021/08/16/meet-customers-at-the-wordpress-com-growth-summit/</link>
+    <author>
+      <name>Jeff Rozic</name>
+    </author>
+    <id>http://en.blog.wordpress.com/?p=45014</id>
+    <updated>2021-08-16T22:00:11Z</updated>
+    <summary>We are proud to feature Jessica Petrie of Yoga Next Door, HBCU Gameday, and other inspiring customers at the second Official WordPress.com Growth Summit, on Tuesday, August 17.</summary>
+  </entry>
+  <entry>
+    <title>Faster, More Flexible Editing of Your Sidebars, Headers, and Footers: Blocks for Widgets</title>
+    <link>https://wordpress.com/blog/2021/08/10/block-based-widgets/</link>
+    <author>
+      <name>Seth McLellan</name>
+    </author>
+    <id>http://en.blog.wordpress.com/?p=44925</id>
+    <updated>2021-08-10T17:58:57Z</updated>
+    <summary>Great news: the block editor you’re familiar with in pages and posts is now part of the widgets editor.</summary>
+  </entry>
+</Feed>

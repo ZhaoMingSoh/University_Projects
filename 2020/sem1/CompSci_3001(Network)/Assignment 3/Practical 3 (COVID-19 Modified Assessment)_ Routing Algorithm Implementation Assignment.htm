@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://myuni.adelaide.edu.au/courses/55529/assignments/158776 -->
+<html class="" dir="ltr" lang="en-AU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/css" rel="stylesheet">
+    <script async="" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/analytics.js"></script><script async="" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/analytics.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/br/dist/ie11-polyfill-5611ab3774.js");
+  }
+  if (!window.fetch) get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="stylesheet" media="all" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css">
+  <link rel="stylesheet" media="all" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/common-b6eb682fbd.css">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://myuni.adelaide.edu.au/web-app-manifest/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/assignments-65a2781f41.css">
+<link rel="stylesheet" media="all" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/learning_outcomes-f28a4f337c.css">
+  <link rel="stylesheet" media="all" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/UofA_canvas.css">
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+
+
+  <script>
+    INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"apse2.nv.instructuremedia.com","resource_domain":"apse2.nv.instructuremedia.com","rtmp_domain":"syd.rtmp.instructuremedia.com","partner_id":"2","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"Commons Favourites","id":1,"url":"https://lor.instructure.com/api/lti/favorite-resources","icon_url":"https://lor.instructure.com/img/icon_commons.png","canvas_icon_class":null,"width":800,"height":400,"use_tray":true,"description":"\u003cp\u003eFind and share course content\u003c/p\u003e\n"},{"name":"Echo360","id":82,"url":"https://echo360.org.au/lti/5444fea8-33ce-4784-934a-2e9f0cb5a200","icon_url":"https://echo360.org.au/assets/images/favicon.png","canvas_icon_class":null,"width":600,"height":500,"use_tray":false,"description":""},{"name":"YouTube","id":618,"url":"https://www.edu-apps.org/lti_public_resources/?tool_id=youtube","icon_url":"https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n"},{"name":"Upload/Embed Image","id":1543,"url":"https://multitool.ciditools.com/cropped/controller.php","icon_url":"https://multitool.ciditools.com/cropped/croppedIcon.png","canvas_icon_class":null,"width":750,"height":620,"use_tray":false,"description":"\u003cp\u003eCrop and upload images to Canvas\u003c/p\u003e\n"},{"name":"Interactive Content – H5P","id":1544,"url":"https://adelaide.h5p.com","icon_url":"https://adelaide.h5p.com/img/h5p-icon.png","canvas_icon_class":null,"width":800,"height":600,"use_tray":false,"description":"\u003cp\u003eCreate, share and reuse interactive HTML5 content in your browser\u003c/p\u003e\n"},{"name":"Studio","id":2334,"url":"https://adelaide.instructuremedia.com/lti/launch?custom_arc_launch_type=content_select","icon_url":"https://files.instructuremedia.com/logos/studio-logo-squid-tiny-electric.svg","canvas_icon_class":null,"width":560,"height":600,"use_tray":false,"description":"\u003cp\u003eVideo for Education\u003c/p\u003e\n"}]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net/br","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/responsive_layout_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-05aacd8f78.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/responsive_layout_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-05aacd8f78.css"],"current_user_id":"82312","current_user_roles":["user","student"],"current_user_types":[],"current_user_disabled_inbox":false,"files_domain":"cluster76.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":"70360000000000001","k12":false,"use_responsive_layout":true,"use_rce_enhancements":false,"rce_auto_save":false,"DIRECT_SHARE_ENABLED":true,"help_link_name":"Help","help_link_icon":"information","use_high_contrast":true,"disable_celebrations":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://myuni.adelaide.edu.au","DEEP_LINKING_LOGGING":null,"SETTINGS":{"open_registration":false,"collapse_global_nav":true,"show_feedback_link":true,"filter_speed_grader_by_student_group":false},"FEATURES":{"assignment_bulk_edit":true,"la_620_old_rce_init_fix":false,"cc_in_rce_video_tray":false,"featured_help_links":true,"responsive_admin_settings":false,"responsive_awareness":false,"responsive_misc":false,"product_tours":false,"module_dnd":false,"files_dnd":true,"unpublished_courses":false},"KILL_JOY":"false","current_user":{"id":"82312","display_name":"Zhao Ming Soh","avatar_image_url":"https://myuni.adelaide.edu.au/images/messages/avatar-50.png","html_url":"https://myuni.adelaide.edu.au/about/82312","pronouns":null,"avatar_is_fallback":true},"page_view_update_url":"/page_views/61f6cc18-01cd-4691-9588-b262550bb17d?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiNjFmNmNjMTgtMDFjZC00NjkxLTk1ODgtYjI2MjU1MGJiMTdkIiwidSI6NzAzNjAwMDAwMDAwODIzMTIsImMiOiIyMDIwLTA1LTIxVDA3OjQ3OjE5Ljk4WiJ9.gwkt7MibVYseHrLGLPIRL0-tocnXgP0l6VjxSjvTWvo","context_asset_string":"course_55529","ping_url":"https://myuni.adelaide.edu.au/api/v1/courses/55529/ping","TIMEZONE":"Australia/Adelaide","CONTEXT_TIMEZONE":"Australia/Adelaide","LOCALE":"en-AU","BIGEASY_LOCALE":"en_AU","FULLCALENDAR_LOCALE":"en-au","MOMENT_LOCALE":"en-au","COURSE_ID":"55529","RICH_CONTENT_APP_HOST":"rich-content-syd.inscloudgate.net","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi5nZndLUkdfX0NlSFdEbUN0LnFGX3ZzSlczQm5VU3dsSHozV0UwVWZlVVVYc1ZlSFhlUWQ1MGQzbVp2ODBjR3c0T05fRTNKNDlZLXhUT05PX180a3pTbVkxeGU3TjlSNE5OZjJaa2JNNjhPbFFYWkZvWGpHVFkzZEtkXzcxVEtVTnJHQUNZcGh0TXBRX3JWcWFoenF6Y2NqYlVGSjh4TnJkV1RZTHBiT1BScTRVa21IUEttaFZxdkVwQnl4RUd5a0w0ZTFCUUlodHNweUtFS1VHRzh1a3A5TkdLclBmakFQSUpBaGN2TVlvNkxyT0xqNkRoR1N1YXBTLWowRUhUZUdnQ2JrdjhUOXdOZk9NYzhJMHJlTkVSeDdnNjEwTWs4ODM0R2UwZUpXQ0liOXdhR3lTczNUZHBiTHh2XzRSWk1IUVFnQ2pUTkZlUmhldXlHeXg2VFJIUVo1cm1OZTRrZno1X19zSVI5MFJVT3ZSVjRHYTE5NkN6LWRvYkpyQUlJc3Z4LWw3eFBHUHZoS1BmVlppVkdRNUtlWWVDc0x2STc5QXpPRVh1bk5uMWRIZkJ2aGFBajJFV2sxdE9SZW4tRjM5M29SNGtyRmhDS2pabU9HWHFUYWRBS0ZzV2VrWkYzUHoyNEx1YS0ySDdrUF9vV2lnZUVhOHg1elJMRlllS0VxSmE3Y2dDZXA0RHJ6Qk5vV0ZtZDZ1ZlJJVTllNlRqa0JrT0JNeV9ULXdmUl9lU3JzRThMUjlCdWtfQ2h5NG1XNmx4S19DU09FUXg3V0JzRkhfUERyaENGYXVtSU1OX3RGODNzdy1xWlhsR0NlVEE3V0wtWGpucWtTYnRhdVo4UkZ0X2s1a1F4V0dKZHd5Z2FLZ1l6ejZZQVdLN0tfOG9LcUxDUndZV1dDaGI4UDhJUUpiOEtldkhlS2JxVndxVlJMRXdPWmw2azFBUEFVN3dhWXBlTWVYcTEyb3ItS3JMV1VwM0VqVWcwSDI2bVpEQkpXZnE0cFVQRU10ZTJLR29sNWVLUWJrS0RNSkpFVGttam9Ya2pDcWdTTVo0bnlPd1lneXZuZFBOZnc1ckNhRGZWTTdzc1RiVzk5bi1ady42WEZBVTZWSmRhR0RTOHRtekFEa29R","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":true,"ASSIGNMENT_ID":"158776","PREREQS":{},"EULA_URL":null,"EXTERNAL_TOOLS":[],"PERMISSIONS":{"context":{"read_as_admin":false,"manage_assignments":false},"assignment":{"update":false,"submit":false}},"ROOT_OUTCOME_GROUP":{"id":"35443","title":"Computer Networks \u0026 Applications (3001_7039 Combined)","vendor_guid":null,"url":"/api/v1/courses/55529/outcome_groups/35443","subgroups_url":"/api/v1/courses/55529/outcome_groups/35443/subgroups","outcomes_url":"/api/v1/courses/55529/outcome_groups/35443/outcomes","can_edit":false,"import_url":"/api/v1/courses/55529/outcome_groups/35443/import","context_id":"55529","context_type":"Course","description":null},"SIMILARITY_PLEDGE":null,"CONFETTI_ENABLED":false,"badge_counts":{"submissions":0},"notices":[],"active_context_tab":"assignments"};
+  </script>
+
+  <link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/Adelaide-6140bbd861.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/Adelaide-6140bbd861.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/en_AU-7cbbfc309f.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/en-au-c-7921a30d72.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/main-e-e0730cffc7.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+
+      ;["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/Australia/Adelaide-6140bbd861.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/Australia/Adelaide-6140bbd861.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/timezone/en_AU-7cbbfc309f.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/moment/locale/en-au-c-7921a30d72.js", "https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/main-e-e0730cffc7.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/Adelaide-6140bbd861.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/Adelaide-6140bbd861.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/en_AU-7cbbfc309f.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/en-au-c-7921a30d72.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/main-e-e0730cffc7.js"></script><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/0-c-07585b02de.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/1-c-93af32715e.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/2-c-ad373a348a.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/4-c-bed331f535.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/5-c-00d2341041.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/6-c-e0e82b199d.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/7-c-efa325eced.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/15-c-b0c8049118.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/16-c-150bc9a144.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/19-c-f4bb916851.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/22-c-9621e32fcf.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/27-c-1f5fec28cc.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/31-c-377ecb3cdb.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/32-c-1cc5f096a4.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/33-c-fe134a2b3b.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/35-c-594733a5fb.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/38-c-3b5678e422.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/48-c-8dbf931950.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/47-c-8c3ba824b7.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/65-c-f44b722843.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/88-c-634bb1586c.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/98-c-3a18dbd58e.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/assignment_show-c-991bb82ec5.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/3-c-7c58dd3fb8.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/8-c-f7e86adb50.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/9-c-c02cbbb8b5.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/11-c-2a01a3ba8a.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/12-c-390ecf45fe.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/17-c-67ec7d0865.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/24-c-cc8fb65697.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/25-c-81f07df8aa.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/44-c-0256a56ea3.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/50-c-f3b49b9e27.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/57-c-348c286a2b.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/62-c-dcb5879d9b.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/69-c-9900e97b8b.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/74-c-63676494eb.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/76-c-fb23835811.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/101-c-65156a8b00.js" as="script" type="text/javascript"><link rel="preload" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/edit_rubric-c-91c0268584.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('assignment_show');
+(window.bundles || (window.bundles = [])).push('edit_rubric');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+  <title>Practical 3 (COVID-19 Modified Assessment): Routing Algorithm Implementation Assignment</title>
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+      ga('set', 'userId', "b2f885709d98d6836c0518beea5eb51a");
+    ga('set', 'dimension1', "100");
+    ga('set', 'dimension2', "00");
+    ga('set', 'dimension3', "0");
+    ga('send', 'pageview');
+    (window.requestIdleCallback || window.setTimeout)(function(){
+      var s=document.createElement('script'), m=document.getElementsByTagName('script')[0]
+      s.async=1; s.src='https://www.google-analytics.com/analytics.js'
+      m.parentNode.insertBefore(s,m)
+    });
+  </script>
+
+
+<style type="text/css"></style><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/0-c-07585b02de.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/1-c-93af32715e.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/2-c-ad373a348a.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/4-c-bed331f535.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/5-c-00d2341041.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/6-c-e0e82b199d.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/7-c-efa325eced.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/15-c-b0c8049118.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/16-c-150bc9a144.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/19-c-f4bb916851.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/22-c-9621e32fcf.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/27-c-1f5fec28cc.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/31-c-377ecb3cdb.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/32-c-1cc5f096a4.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/33-c-fe134a2b3b.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/35-c-594733a5fb.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/38-c-3b5678e422.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/48-c-8dbf931950.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/47-c-8c3ba824b7.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/65-c-f44b722843.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/88-c-634bb1586c.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/98-c-3a18dbd58e.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/assignment_show-c-991bb82ec5.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/3-c-7c58dd3fb8.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/8-c-f7e86adb50.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/9-c-c02cbbb8b5.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/11-c-2a01a3ba8a.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/12-c-390ecf45fe.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/17-c-67ec7d0865.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/24-c-cc8fb65697.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/25-c-81f07df8aa.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/44-c-0256a56ea3.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/50-c-f3b49b9e27.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/57-c-348c286a2b.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/62-c-dcb5879d9b.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/69-c-9900e97b8b.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/74-c-63676494eb.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/76-c-fb23835811.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/101-c-65156a8b00.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/edit_rubric-c-91c0268584.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/680-c-63564ab20d.js"></script><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/UofA_canvas.js"></script><style type="text/css" data-glamor=""></style><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/52-c-1c6ac76cbd.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/627-c-e25a379499.js"></script><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/PaginatedView-bf30c3a7d1.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/KeyboardShortcuts-f4493af988.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/TreeBrowser-3f80f1d2d4.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/MoveOutcomeDialog-9d1c3f4686.css" data-loaded-by-brandablecss="true"><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/prism.min.css"><link rel="stylesheet" href="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/prism-line-numbers.css"><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/atomic_search_widget.js"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><style>.ace_snippet-marker {    -moz-box-sizing: border-box;    box-sizing: border-box;    background: rgba(194, 193, 208, 0.09);    border: 1px dotted rgba(211, 208, 235, 0.62);    position: absolute;}</style><style>.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {    background-color: #CAD6FA;    z-index: 1;}.ace_editor.ace_autocomplete .ace_line-hover {    border: 1px solid #abbffe;    margin-top: -1px;    background: rgba(233,233,253,0.4);}.ace_editor.ace_autocomplete .ace_line-hover {    position: absolute;    z-index: 2;}.ace_editor.ace_autocomplete .ace_scroller {   background: none;   border: none;   box-shadow: none;}.ace_rightAlignedText {    color: gray;    display: inline-block;    position: absolute;    right: 4px;    text-align: right;    z-index: -1;}.ace_editor.ace_autocomplete .ace_completion-highlight{    color: #000;    text-shadow: 0 0 0.01em;}.ace_editor.ace_autocomplete {    width: 280px;    z-index: 200000;    background: #fbfbfb;    color: #444;    border: 1px lightgray solid;    position: fixed;    box-shadow: 2px 3px 5px rgba(0,0,0,.2);    line-height: 1.4;}</style><style type="text/css">.Console-module__console--I4oMQ .ace_editor{position:absolute;top:0;left:0;right:0;bottom:0;height:100%;width:100%}.Console-module__console--I4oMQ .ace_error{color:#e70909}.Console-module__console--I4oMQ .ace_output{color:#8e6627}.Console-module__console--I4oMQ .ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line{background-color:rgba(51,170,204,.5)!important}.Console-module__console--I4oMQ .ace_editor.ace_autocomplete .ace_line-hover{border:1px solid #3ac!important;background-color:rgba(51,170,204,.32)!important}.Console-module__console--I4oMQ .ace_editor .ace_storage.ace_type{width:auto}</style><style type="text/css">.Editor-module__editor--3du3f .ace_editor{position:absolute;top:0;left:0;right:0;bottom:0;height:100%;width:100%;line-height:1.3em}.Editor-module__editor--3du3f .ace_editor[id^=ace-code-editor-]{bottom:50px}.Editor-module__editor--3du3f .ace_editor.ace-crimson-editor .ace_gutter{background-color:#fff}.Editor-module__editor--3du3f .ace_editor.ace-crimson-editor .ace_gutter-active-line{background-color:#d5eaef}.Editor-module__editor--3du3f .ace_editor.ace-crimson-editor .ace_marker-layer .ace_active-line{background-color:#ebf4f7}.Editor-module__editor--3du3f .error-line{position:absolute;background-color:#ffbfbf;z-index:3}.Editor-module__editor--3du3f .error-gutter{background-color:#ffbfbf}.Editor-module__editor--3du3f .ace_gutter .ace_gutter-layer{min-width:50px!important}</style><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/1ab0e01b-1236-481d-8dbb-57854aaca767"><style type="text/css">._backendStatus_17b2u_1{cursor:default;display:inline-block;position:relative}._backendStatus_17b2u_1 .fa.fa-circle{float:none}._backendStatus_17b2u_1 i.fa-circle{font-size:1.1rem;padding-top:8px;float:left}._busy_17b2u_12{color:#fdc551}._broken_17b2u_15{color:#c96768}._none_17b2u_18{color:#d1d3d8}._ready_17b2u_21{color:#83c967}._statusText_17b2u_24{padding-top:6px}._animation_17b2u_27{position:absolute;transition:all .3s ease-out;white-space:pre;right:20px;top:5px}._statusText_17b2u_24{display:inline}@media screen and (max-width:640px){._statusText_17b2u_24{display:none}}._hidden_17b2u_41{display:none}._icon_17b2u_44{margin-right:5px;height:100%!important}</style><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/22d52e5b-ba7b-4278-9a4b-ed6467462f30"><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/90f01bfb-4ffc-47b6-a11f-52a18370205f"><style type="text/css">._container_1g5c2_1{height:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center}._container_1g5c2_1 .svg-inline--fa{margin:0 .5em}._image_1g5c2_10{min-height:0;flex-grow:1;width:100%;height:100%;max-width:100%}iframe._image_1g5c2_10{width:100%}._bottomBar_1g5c2_20{width:100%;flex-shrink:0;display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;text-align:center}._bottomBar_1g5c2_20>div:first-child{text-align:left}._bottomBar_1g5c2_20>div:first-child .svg-inline--fa{margin-left:0}._bottomBar_1g5c2_20>div:last-child{text-align:right}._bottomBar_1g5c2_20>div:last-child .svg-inline--fa{margin-right:0}._bottomBar_1g5c2_20>*{flex:1 1 50%}._bottomBar_1g5c2_20>span{flex-basis:0;text-align:center}._button_1g5c2_42{font-size:1rem;font-weight:700;display:inline-block;text-decoration:none;border-radius:3px;font-size:.8667rem;line-height:1.2;margin:.5rem;padding:.5rem 1rem;transition:background-color .15s ease,color .15s ease;text-align:center;cursor:pointer;background:#3a3a3a;color:#fff;outline:none;border:none}._button_1g5c2_42:active:focus,._button_1g5c2_42:focus,._button_1g5c2_42:hover{outline:none;border:none;background-color:#666}._button_1g5c2_42._disabled_1g5c2_66,._button_1g5c2_42._disabled_1g5c2_66:hover,._button_1g5c2_42:disabled,._button_1g5c2_42:disabled:hover{background-color:#d5eaef;color:#fff}</style><style type="text/css">.xterm{font-family:courier-new,courier,monospace;font-feature-settings:"liga" 0;position:relative;user-select:none;-ms-user-select:none;-webkit-user-select:none}.xterm.focus,.xterm:focus{outline:none}.xterm .xterm-helpers{position:absolute;top:0;z-index:10}.xterm .xterm-helper-textarea{position:absolute;opacity:0;left:-9999em;top:0;width:0;height:0;z-index:-10;white-space:nowrap;overflow:hidden;resize:none}.xterm .composition-view{background:#000;color:#fff;display:none;position:absolute;white-space:nowrap;z-index:1}.xterm .composition-view.active{display:block}.xterm .xterm-viewport{background-color:#000;overflow-y:scroll;cursor:default;position:absolute;right:0;left:0;top:0;bottom:0}.xterm .xterm-screen{position:relative}.xterm .xterm-screen canvas{position:absolute;left:0;top:0}.xterm .xterm-scroll-area{visibility:hidden}.xterm-char-measure-element{display:inline-block;visibility:hidden;position:absolute;top:0;left:-9999em;line-height:normal}.xterm{cursor:text}.xterm.enable-mouse-events{cursor:default}.xterm.xterm-cursor-pointer{cursor:pointer}.xterm .xterm-accessibility,.xterm .xterm-message{position:absolute;left:0;top:0;bottom:0;right:0;z-index:100;color:transparent}.xterm .live-region{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}</style><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/83c52d38-2beb-4075-acae-38a100085014"><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700);</style><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/fabbc473-c193-4913-b5ef-a0279fae51f9"><link rel="stylesheet" href="blob:https://myuni.adelaide.edu.au/d7d1f541-13c3-4660-afae-d4e223c9d589"><style type="text/css">.lm_root{position:relative}.lm_row>.lm_item{float:left}.lm_content{overflow:hidden;position:relative}.lm_dragging,.lm_dragging *{cursor:move!important;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.lm_maximised{position:absolute;left:0;top:0;z-index:40}.lm_maximise_placeholder{display:none}.lm_splitter{position:relative;z-index:20}.lm_splitter.lm_dragging,.lm_splitter:hover{background:orange}.lm_splitter.lm_vertical .lm_drag_handle{position:absolute;height:25px;top:-10px;cursor:n-resize;width:100%}.lm_splitter.lm_horizontal{height:100%;float:left}.lm_splitter.lm_horizontal .lm_drag_handle{position:absolute;width:25px;left:-10px;cursor:e-resize;height:100%}.lm_header{position:relative;overflow:visible}.lm_header [class^=lm_]{box-sizing:content-box!important}.lm_header>ul{list-style-type:none;margin:0;padding:0}.lm_header .lm_controls{right:3px;position:absolute}.lm_header .lm_controls>li{width:18px;height:18px;float:left;text-align:center;cursor:pointer}.lm_header .lm_tabs{position:absolute}.lm_header .lm_tab{display:block;float:left;padding:0 25px 0 12px;padding-right:12px;height:30px;line-height:100%;margin-top:1px;cursor:pointer;position:relative}.lm_header .lm_tab i{height:19px;width:2px;position:absolute}.lm_header .lm_tab i.lm_left{left:-2px;top:0}.lm_header .lm_tab i.lm_right{right:-2px;top:0}.lm_header .lm_tab .lm_title{text-overflow:ellipsis;display:inline-block;overflow:hidden}.lm_header .lm_tab .lm_close_tab{position:absolute;right:0;top:0;width:14px;height:14px;text-align:center}.lm_drop_tab_placeholder{width:100px;height:10px;float:left;visibility:hidden}.lm_header .lm_controls .lm_tabdropdown:before{color:#000;content:"";width:0;height:0;vertical-align:middle;display:inline-block;border-top:5px dashed;border-right:5px solid transparent;border-left:5px solid transparent}.lm_header .lm_tabdropdown_list{position:absolute;top:20px;right:0;z-index:1}.lm_header .lm_tabdropdown_list .lm_tab{clear:both;padding-right:10px}.lm_header .lm_tabdropdown_list .lm_tab .lm_title{width:100px}.lm_header .lm_tabdropdown_list .lm_close_tab{display:none!important}.lm_dragProxy{position:absolute;z-index:30;top:0;left:0}.lm_dragProxy .lm_header{background:transparent}.lm_dragProxy .lm_content{border-top:none;overflow:hidden}.lm_dropTargetIndicator{position:absolute;z-index:20;display:none;box-sizing:content-box}.lm_dropTargetIndicator .lm_inner{position:relative;width:100%;height:100%;left:0;top:0}.lm_transition_indicator{top:0;left:0;display:none;z-index:20}.lm_popin,.lm_transition_indicator{position:absolute;width:20px;height:20px}.lm_popin{z-index:9999;bottom:0;right:0}.lm_popin>*{position:absolute;left:0;top:0;width:100%;height:100%}.lm_popin>.lm_bg{z-index:10}.lm_popin>.lm_icon{z-index:20}</style><style type="text/css">.lm_content,.lm_goldenlayout{background:#fff}.lm_dragProxy .lm_content{box-shadow:2px 2px 4px rgba(0,0,0,.2);box-sizing:border-box}.lm_dropTargetIndicator{box-shadow:inset 0 0 30px rgba(0,0,0,.4);outline:1px dashed rgba(0,0,0,.2);margin:-1px;transition:all .2s ease}.lm_dropTargetIndicator .lm_inner{background:#000;opacity:.1;filter:alpha(opacity=1)}.lm_splitter{background:#ebf4f7;transition:opacity .2s ease;z-index:100}.lm_splitter:hover{background:#bfcdd2}.lm_header{height:30px;background-color:#ebf4f7}.lm_header.lm_selectable{cursor:pointer}.lm_selected .lm_header{background-color:#452500}.lm_maximised .lm_header{background-color:#fff}.lm_header .lm_tab{padding-left:12px!important;padding-right:12px!important;padding-top:0;padding-bottom:0;height:30px;background:#ebf4f7;margin-top:0;color:rgba(86,94,101,.5);font-weight:400}.lm_header .lm_tab .lm_title{font-size:.9rem;line-height:30px}.lm_tab.lm_active,.lm_tab:hover{color:#777;background:#ebf4f7}.lm_header .lm_tab.lm_active{border-bottom:none;color:#3a3a3a;background-color:#fff}.lm_header .lm_tab .lm_close_tab{background-position:50%;opacity:.4;filter:alpha(opacity=40);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAIklEQVR4nGNgYGD4z4Ad/Mdg4ODDBXCZRFgCp5EEHQMXBwAQAgz0SVCcggAAAABJRU5ErkJggg==);width:11px;height:11px;right:6px;top:4px;background-repeat:no-repeat}.lm_header .lm_tab.lm_active .lm_close_tab,.lm_header .lm_tab .lm_close_tab:hover{opacity:1;filter:alpha(opacity=100)}.lm_controls>li{background-position:50%;background-repeat:no-repeat;position:relative;opacity:.4;transition:opacity .3s ease}.lm_controls>li:hover{opacity:1;filter:alpha(opacity=100)}.lm_controls .lm_popout{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAANUlEQVR4nI2QMQoAMAwCz5L/f9mOzZIaN0E9UDyZhaaQz6atgBHgambEJ5wBKoS0WaIvfT+6k2miecn19maaaaaasuvork5cyii=)}.lm_controls .lm_maximise{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAIklEQVR4nGNkYGD4z0AAMBFSAAOETPpPlEmDUREjAxHhBABPvAQLFv3qngAAAABJRU5ErkJggg==)}.lm_maximised .lm_controls .lm_maximise{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJklEQVR4nGP8//8/AyHARFDFUFbEwsDAwMDIyIgzHP7//89IlEkApSkHEScJTKoAAAAASUVORK5CYII=)}.lm_controls .lm_close{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVR4nGNgYGD4z4Af/Mdg4FKASwCnDf8JKSBoAtEmEXQTQd8RDCcA6+4q8ovigasaaaaasuvork5cyii=)}.lm_transition_indicator{background-color:#000;border:1px dashed #555}.lm_popin{cursor:pointer}.lm_popin .lm_bg{background:#000;opacity:.7}.lm_popin .lm_icon{background-position:50%;background-repeat:no-repeat;opacity:.7;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAJCAYAAADpeqZqAAAAWklEQVR4nJWOyw3AIAxDHcQC7L8jbwT3AlJBfNp3SiI7dtRaLSlKKeoA1oEsKSQZCEluexw8Tm3ohk+E7bnOUHUGcNh+HwbBygw4AZ7FN/Lt84p0l+yTflV8AKQyLdcCRJi/AAAAAElFTkSuQmCC)}.lm_popin:hover .lm_icon{opacity:1}.lm_splitter.lm_horizontal .lm_drag_handle{cursor:ew-resize}.lm_splitter.lm_vertical .lm_drag_handle{cursor:ns-resize}</style><style type="text/css">.lm_header .lm_tabs{display:flex;width:100%;overflow-x:scroll;padding-bottom:30px}.lm_header{overflow:hidden!important}</style><style type="text/css"></style><style>.ajas-search-widget{max-width:240px;width:100%;position:absolute}.ajas-search-widget--dashboard{margin-left:15px;margin-top:9px;position:static}.ajas-search-widget--all-courses{top:30px;right:24px}.ajas-search-widget--files{top:10px;right:24px}.ajas-search-widget--course{top:-52px;right:24px}.ajas-search-widget,.ajas-search-widget *{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}.ajas-search-widget__form{display:block;position:relative;width:100%;margin:0}.ajas-search-widget__form input{height:40px;font-family:LatoWeb, sans-serif;font-weight:normal;font-size:15px;color:#333;width:100%;padding:0 40px 0 10px;outline:0;border:1px solid #ccc;border-radius:3px;line-height:43px}.ajas-search-widget__form input:focus{border-color:#05AFFA}.ajas-search-widget__form input:focus+.ajas-search-widget__btn--search{background:#05AFFA}.ajas-search-widget__form input:focus+.ajas-search-widget__btn--search svg{fill:#fff}.ajas-search-widget-hidden{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}.ajas-search-widget__btn--search{width:30px;height:30px;border-radius:3px;background:#eee;position:absolute;top:5px;right:5px;-webkit-transition:transform 0.1s ease;-moz-transition:transform 0.1s ease;-o-transition:transform 0.1s ease;-ms-transition:transform 0.1s ease;transition:transform 0.1s ease;border:none;padding:0}.ajas-search-widget__btn--search svg{width:20px;fill:#595959;margin-top:5px;height:20px}.ajas-search-widget__btn--search:hover{cursor:pointer}.ajas-search-widget__btn--search:active{-webkit-transform:scale(0.95);-moz-transform:scale(0.95);-o-transform:scale(0.95);-ms-transform:scale(0.95);transform:scale(0.95)}.ajas-search-widget__btn--search:focus{outline:thin dotted #222;background:#05AFFA}.ajas-search-widget__btn--search:focus svg{fill:#fff}@media (max-width: 767px){.ajas-search-widget{display:none}.ajas-search-widget.ajas-search-widget--small{display:block}}.ajas-search-toggle{width:55px;height:55px;background:none;border-radius:0;border:1px solid transparent;position:absolute;right:0;top:0;display:flex;align-items:center;justify-content:center}.ajas-search-toggle svg{fill:#ffffff;width:20px;height:20px}.ajas-search-toggle:focus{border-color:#ffffff;outline:none}.ajas-search-widget--small{top:0;right:0;height:55px;overflow:hidden;max-width:55px;width:100%;position:absolute;padding:5px 55px 5px 0px;padding-left:0px;transition:all 0.3s ease}.ajas-search-widget--small .ajas-search-widget__btn--search{width:35px;height:35px}.ajas-search-widget--small form{overflow:hidden}.ajas-search-widget--small input{height:45px;width:100%;margin:0;line-height:normal;position:relative;color:#222 !important;transition:all 0.3s ease}.ajas-search-widget--small input:focus{outline:thin solid #05AFFA}.ajas-search-widget--small.is-active{max-width:767px;padding-left:5px}.ajas-search-widget--small.is-active input{left:0}
+</style><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/20-c-ab5cb3899a.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/28-c-3e854c1b70.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/40-c-86dc6fc39b.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/75-c-50e95acfa3.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/591-c-465458190e.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/10-c-0e3f849fbe.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/18-c-55d4499995.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/21-c-519d319a96.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/39-c-d4dedf37ce.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/64-c-ab71affc81.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/78-c-f414b5e186.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/94-c-387805821a.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/114-c-2edf8fa7c4.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/125-c-ae43f9908d.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/135-c-a3937b0716.js"></script><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/canvas-rce-old-async-chunk-c-156aaa8c27.js"></script><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-blacklist, declaration-property-value-blacklist */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 0 }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 0 }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-blacklist, declaration-property-value-blacklist */
+</style><script charset="utf-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/694-c-61dc81edf1.js"></script></head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-transitions context-course_55529 webkit chrome no-touch" data-gr-c-s-loaded="true">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="false"></div>
+
+<div id="application" class="ic-app">
+  
+
+
+    <header id="mobile-header" class="no-print" style="position: relative;">
+      <button type="button" class="Button Button--icon-action-rev Button--large  mobile-header-hamburger">
+        <i class="icon-solid icon-hamburger"></i>
+        <span id="mobileHeaderInboxUnreadBadge" class="menu-item__badge" style="min-width: 0px; top: 12px; height: 12px; right: 6px;"></span>
+        <span class="screenreader-only">Dashboard</span>
+      </button>
+        <a class="mobile-header-title expandable" href="https://myuni.adelaide.edu.au/courses/55529" role="button" aria-controls="mobileContextNavContainer">
+          <span>4010_COMP_SCI_X_0009</span>
+          <i style="padding-left: 15px;" id="mobileHeaderArrowIcon" class="icon-arrow-open-down"></i>
+        </a>
+    <div class="ajas-search-widget ajas-search-widget--small">
+    <form class="ajas-search-widget__form" action="https://myuni.adelaide.edu.au/courses/55529/external_tools/1928" method="get" role="search">
+      <label for="ajas-search02" class="ajas-search-widget-hidden">Search</label>
+      <input type="text" placeholder="Search..." id="ajas-search02">
+      <button aria-label="submit search" class="ajas-search-widget__btn--search" type="submit">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-515 337 48 48" enable-background="new -515 337 48 48">
+    <path d="M-484,365h-1.6l-0.5-0.5c2-2.3,3.1-5.2,3.1-8.5c0-7.2-5.8-13-13-13s-13,5.8-13,13s5.8,13,13,13c3.2,0,6.2-1.2,8.5-3.1 l0.5,0.5v1.6l10,10l3-3L-484,365z M-496,365c-5,0-9-4-9-9s4-9,9-9s9,4,9,9S-491,365-496,365z"></path>
+    <path fill="none" d="M-515,337h48v48h-48V337z"></path>
+  </svg>
+      </button>
+    </form>
+    <button class="ajas-search-toggle" type="button" aria-label="toggle search"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-515 337 48 48" enable-background="new -515 337 48 48">
+    <path d="M-484,365h-1.6l-0.5-0.5c2-2.3,3.1-5.2,3.1-8.5c0-7.2-5.8-13-13-13s-13,5.8-13,13s5.8,13,13,13c3.2,0,6.2-1.2,8.5-3.1 l0.5,0.5v1.6l10,10l3-3L-484,365z M-496,365c-5,0-9-4-9-9s4-9,9-9s9,4,9,9S-491,365-496,365z"></path>
+    <path fill="none" d="M-515,337h48v48h-48V337z"></path>
+  </svg></button>
+  </div></header>
+    <nav id="mobileContextNavContainer"></nav>
+  <header id="header" class="ic-app-header no-print ">
+    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" role="button" href="https://myuni.adelaide.edu.au/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container">
+                  <div aria-hidden="true" class="fs-exclude ic-avatar ">
+                    <img src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/avatar-50.png" alt="Zhao Ming Soh">
+                  </div>
+                  <span class="menu-item__badge"></span>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://myuni.adelaide.edu.au/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+            <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+              <a id="global_nav_courses_link" role="button" href="https://myuni.adelaide.edu.au/courses" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+                </div>
+                <div class="menu-item__text">
+                  Courses
+                </div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_groups_link" role="button" href="https://myuni.adelaide.edu.au/groups" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--groups" viewBox="0 0 200 135"><path d="M134.5 129.4c0-1.1 0-19.8-6.2-31.1-4.5-8.5-16.4-12.4-35-19.2-1.7-.6-3.4-1.1-5.1-1.7v-8.5c5.6-5.1 8.5-12.4 8.5-20.3V29.4C96.6 13 83.6 0 67.2 0S37.9 13 37.9 29.4v19.2c0 7.3 3.4 14.7 8.5 20.3v8.5c-1.7.6-3.4 1.1-5.1 1.7-18.6 6.2-30.5 10.7-35 19.2C0 109.6 0 128.8 0 129.4c0 3.4 2.3 5.6 5.6 5.6h123.7c3.5 0 5.7-2.3 5.2-5.6zm-123.2-5.7c.6-5.6 1.7-14.7 3.4-19.8C17 98.8 30 94.3 43.5 89.8c2.8-1.1 5.6-2.3 9-3.4 2.3-.6 4-2.8 4-5.1V66.7c0-1.7-.6-3.4-1.7-4.5-4-3.4-6.2-8.5-6.2-13.6V29.4c0-10.2 7.9-18.1 18.1-18.1s18.1 7.9 18.1 18.1v19.2c0 5.1-2.3 10.2-6.2 13.6-1.1 1.1-1.7 2.8-1.7 4.5v14.7c0 2.3 1.7 4.5 4 5.1 2.8 1.1 6.2 2.3 9 3.4 13.6 5.1 26.6 9.6 28.8 14.1 2.8 5.1 4 13.6 4.5 19.8H11.3zM196 79.1c-2.8-6.2-11.3-9.6-22.6-13.6l-1.7-.6v-3.4c4.5-4 6.8-9.6 6.8-15.8V35c0-12.4-9.6-22-22-22s-22 10.2-22 22v10.7c0 6.2 2.3 11.9 6.8 15.8V65l-1.7.6c-7.3 2.8-13 4.5-16.9 7.3-1.7 1.1-2.3 2.8-2.3 5.1.6 1.7 1.7 3.4 3.4 4.5 7.9 4 12.4 7.3 14.1 10.7 2.3 4.5 4 10.2 5.1 18.1.6 2.3 2.8 4.5 5.6 4.5h45.8c3.4 0 5.6-2.8 5.6-5.1 0-3.9 0-24.3-4-31.6zm-42.9 25.4c-1.1-6.8-2.8-12.4-5.1-16.9-1.7-4-5.1-6.8-9.6-10.2 1.7-1.1 3.4-1.7 5.1-2.3l5.6-2.3c1.7-.6 3.4-2.8 3.4-5.1v-9.6c0-1.7-.6-3.4-2.3-4.5-2.8-1.7-4.5-5.1-4.5-8.5V34.5c0-6.2 4.5-10.7 10.7-10.7s10.7 5.1 10.7 10.7v10.7c0 3.4-1.7 6.2-4.5 8.5-1.1 1.1-2.3 2.8-2.3 4.5v10.2c0 2.3 1.1 4.5 3.4 5.1l5.6 2.3c6.8 2.3 15.3 5.6 16.4 7.9 1.7 2.8 2.8 12.4 2.8 20.9h-35.4z"></path></svg>
+
+                </div>
+                <div class="menu-item__text">
+                  Groups
+                </div>
+              </a>
+            </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="https://myuni.adelaide.edu.au/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="https://myuni.adelaide.edu.au/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+                <span class="menu-item__badge"><span class="fdaJD_bGBk">20 unread messages.</span><span aria-hidden="true">20</span></span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+    <li id="context_external_tool_1928_menu_item" class="globalNavExternalTool menu-item ic-app-header__menu-list-item">
+      <a class="ic-app-header__menu-list-link" href="https://myuni.adelaide.edu.au/accounts/1/external_tools/1928?launch_type=global_navigation">
+          <svg version="1.1" class="ic-icon-svg ic-icon-svg--lti menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+            <path d="M13.49,26.92a2,2,0,0,1-2-2A13.51,13.51,0,0,1,25,11.47a2,2,0,1,1,0,3.9A9.6,9.6,0,0,0,15.44,25,2,2,0,0,1,13.49,26.92ZM62.21,62.15a6.11,6.11,0,0,1-8.64,0L41.28,49.85a26.72,26.72,0,0,1-13.61,4.05h-.75a26.93,26.93,0,1,1,0-53.86h.12A26.94,26.94,0,0,1,49.92,41.22l12.3,12.3A6.11,6.11,0,0,1,62.21,62.15ZM50,27A23,23,0,1,0,27,50h.61A23.06,23.06,0,0,0,50,27Zm9.49,29.29L47.52,44.33a27.17,27.17,0,0,1-3.11,3.13L56.34,59.39a2.21,2.21,0,0,0,3.12-3.12Z"></path>
+          </svg>
+        <div class="menu-item__text">
+          Search
+        </div>
+      </a>
+    </li>
+    <li id="context_external_tool_2334_menu_item" class="globalNavExternalTool menu-item ic-app-header__menu-list-item">
+      <a class="ic-app-header__menu-list-link" href="https://myuni.adelaide.edu.au/accounts/1/external_tools/2334?launch_type=global_navigation">
+          <svg version="1.1" class="ic-icon-svg ic-icon-svg--lti menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+            <path d="M37.5331419,41.3325083 L25.3997411,41.3325083 L25.3997411,52.8756632 C27.5972597,53.6451225 29.1733531,55.7378472 29.1733531,58.198822 C29.1733531,61.3127847 26.6499049,63.8371501 23.5370738,63.8371501 C20.4242427,63.8371501 17.9007945,61.3127847 17.9007945,58.198822 C17.9007945,55.7378472 19.4768879,53.6451225 21.6744065,52.8756632 L21.6744065,41.3325083 L17.5706263,41.3325083 L17.5717453,47.9192726 C17.5717453,50.4825483 15.4945548,52.5604939 12.9322104,52.5604939 L10.9667199,52.5588751 C10.2051449,54.7710384 8.10625368,56.3604121 5.63627929,56.3604121 C2.52344819,56.3604121 2.84217094e-14,53.8360466 2.84217094e-14,50.722084 C2.84217094e-14,47.6081214 2.52344819,45.0837559 5.63627929,45.0837559 C8.08603407,45.0837559 10.1707563,46.6472143 10.9477485,48.8310912 L12.9905507,48.8310912 C13.4625615,48.8310912 13.8452018,48.4483118 13.8452018,47.9761294 L13.8452018,41.3325083 L5.65400042,41.3325083 C4.57511859,41.3325083 3.70051205,40.4575839 3.70051205,39.3783099 L3.70051205,1.95419847 C3.70051205,0.874924458 4.57511859,-1.42108547e-14 5.65400042,-1.42108547e-14 L57.2376164,-1.42108547e-14 C58.3164983,-1.42108547e-14 59.1911048,0.874924458 59.1911048,1.95419847 L59.1911048,39.3783099 C59.1911048,40.4575839 58.3164983,41.3325083 57.2376164,41.3325083 L49.085452,41.3325083 L49.085452,47.9761294 C49.085452,48.4483118 49.4680923,48.8310912 49.9401031,48.8310912 L51.9829054,48.8310912 C52.7598976,46.6472143 54.8446197,45.0837559 57.2943745,45.0837559 C60.4072056,45.0837559 62.9306538,47.6081214 62.9306538,50.722084 C62.9306538,53.8360466 60.4072056,56.3604121 57.2943745,56.3604121 C54.8244001,56.3604121 52.725509,54.7710384 51.9639339,52.5588751 L49.9996524,52.5604938 C47.436099,52.5604939 45.3589085,50.4825483 45.3589085,47.9192726 L45.3600275,41.3325083 L41.2584765,41.3325083 L41.2584765,52.8756632 C43.4559951,53.6451225 45.0320885,55.7378472 45.0320885,58.198822 C45.0320885,61.3127847 42.5086403,63.8371501 39.3958092,63.8371501 C36.2829781,63.8371501 33.7595299,61.3127847 33.7595299,58.198822 C33.7595299,55.7378472 35.3356233,53.6451225 37.5331419,52.8756632 L37.5331419,41.3325083 Z M39.4407163,60.0484002 C40.4618389,60.0484002 41.2896223,59.2203158 41.2896223,58.198822 C41.2896223,57.1773282 40.4618389,56.3492439 39.4407163,56.3492439 C38.4195937,56.3492439 37.5918102,57.1773282 37.5918102,58.198822 C37.5918102,59.2203158 38.4195937,60.0484002 39.4407163,60.0484002 Z M23.5819809,60.0484002 C24.6031035,60.0484002 25.4308869,59.2203158 25.4308869,58.198822 C25.4308869,57.1773282 24.6031035,56.3492439 23.5819809,56.3492439 C22.5608582,56.3492439 21.7330748,57.1773282 21.7330748,58.198822 C21.7330748,59.2203158 22.5608582,60.0484002 23.5819809,60.0484002 Z M57.3392816,52.5716621 C58.3604042,52.5716621 59.1881877,51.7435778 59.1881877,50.722084 C59.1881877,49.7005902 58.3604042,48.8725058 57.3392816,48.8725058 C56.318159,48.8725058 55.4903755,49.7005902 55.4903755,50.722084 C55.4903755,51.7435778 56.318159,52.5716621 57.3392816,52.5716621 Z M5.59137222,52.5716621 C6.61249484,52.5716621 7.44027829,51.7435778 7.44027829,50.722084 C7.44027829,49.7005902 6.61249484,48.8725058 5.59137222,48.8725058 C4.57024959,48.8725058 3.74246615,49.7005902 3.74246615,50.722084 C3.74246615,51.7435778 4.57024959,52.5716621 5.59137222,52.5716621 Z M30.1554353,12.9293586 L35.7525093,16.2831044 C36.070684,16.5163802 36.2591714,16.8906762 36.2591714,17.2892282 C36.2591714,17.6877801 36.070684,18.0620761 35.7525093,18.2953519 L30.1554353,21.6490977 C29.7776345,21.8706324 29.3121961,21.8707698 28.9342686,21.6494581 C28.5563411,21.4281465 28.3232712,21.0189676 28.3227651,20.575899 L28.3227651,14.0025573 C28.3232712,13.5594887 28.5563411,13.1503099 28.9342686,12.9289982 C29.3121961,12.7076865 29.7776345,12.7078239 30.1554353,12.9293586 Z M55.6445081,31.031948 L55.6445081,4.52360758 C55.6445081,3.98397057 55.2072048,3.54650834 54.6677639,3.54650834 L8.22385298,3.54650834 C7.68441206,3.54650834 7.24710879,3.98397057 7.24710879,4.52360758 L7.24710879,31.031948 L55.6445081,31.031948 Z M55.6445081,34.5784563 L7.24710879,34.5784563 L7.24710879,36.8093831 C7.24710879,37.3490201 7.68441206,37.7864824 8.22385298,37.7864824 L54.6677639,37.7864824 C55.2072048,37.7864824 55.6445081,37.3490201 55.6445081,36.8093831 L55.6445081,34.5784563 Z"></path>
+          </svg>
+        <div class="menu-item__text">
+          Studio
+        </div>
+      </a>
+    </li>
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="ic-icon-svg menu-item__icon svg-icon-information" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M94.42,139h11.15V105.58H94.42ZM83.27,150.19V94.42h33.46v55.76ZM100,72.12A11.15,11.15,0,1,1,111.15,61,11.16,11.16,0,0,1,100,72.12Zm0-33.46A22.31,22.31,0,1,0,122.31,61,22.33,22.33,0,0,0,100,38.66M100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button id="primaryNavToggle" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Expand global navigation
+                " title="Expand global navigation
+                ">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+    <div id="global_nav_tour"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://myuni.adelaide.edu.au/"><span class="ellipsible">      <i class="icon-home" title="My dashboard">
+        <span class="screenreader-only">My dashboard</span>
+      </i>
+</span></a></li><li><a href="https://myuni.adelaide.edu.au/courses/55529"><span class="ellipsible">4010_COMP_SCI_X_0009</span></a></li><li><a href="https://myuni.adelaide.edu.au/courses/55529/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776"><span class="ellipsible">Practical 3 (COVID-19 Modified Assessment): Routing Algorithm Implementation Assignment</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu list-view" style="display: block">
+              <span id="section-tabs-header-subtitle" class="ellipsis">2020 Semester 1</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529" title="Home" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/announcements" title="Announcements" class="announcements" tabindex="0">Announcements</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/265" title="Piazza" class="context_external_tool_265" tabindex="0">Piazza</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/modules" title="Modules" class="modules" tabindex="0">Modules</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/users" title="People" class="people" tabindex="0">People</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/assignments" title="Assignments" aria-current="page" class="assignments active" tabindex="0">Assignments</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/grades" title="Marks" class="grades" tabindex="0">Marks</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/82" title="Echo 360" class="context_external_tool_82" tabindex="0">Echo 360</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/832" title="LMS Analytics" class="context_external_tool_832" tabindex="0">LMS Analytics</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/1439" title="Toolkit" class="context_external_tool_1439" tabindex="0">Toolkit</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/1441" title="Assignment Help" class="context_external_tool_1441" tabindex="0">Assignment Help</a></li><li class="section"><a href="https://myuni.adelaide.edu.au/courses/55529/external_tools/1928" title="Search" class="context_external_tool_1928" tabindex="0">Search</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<style>
+  #right-side-wrapper {
+    height: 100%;
+  }
+</style>
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class="assignment-title">
+      <div class="title-content">
+        <h1 class="title">
+          Practical 3 (COVID-19 Modified Assessment): Routing Algorithm Implementation Assignment
+        </h1>
+      </div>
+      <div class="assignment-buttons">
+        
+
+        
+      </div>
+    </div>
+    <ul class="student-assignment-overview">
+      <li>
+        <span class="title">Due</span>
+        <span class="value">
+          <span class="date_text">
+                <span class="display_date">Jun 5</span> by 
+                <span class="display_time">17:00</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class="title">Points</span>
+        <span class="value">200</span>
+      </li>
+      
+
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version enhanced"><h2>Before you begin</h2>
+<p><em>Although this practical is marked automatically, all marks will be moderated by a marker using the following information. The practical is marked out of 200 marks.</em></p>
+<p><span style="color: #ff0000;"><strong>You must complete a logbook</strong></span> as you develop your code (this process should be familiar to those that have or are doing the Computer Systems course). You can find details on how to do that and what that should look like <span style="text-decoration: underline;"><strong><span style="color: #ff0000; text-decoration: underline;"><a style="color: #ff0000; text-decoration: underline;" title=" Logbook" href="https://myuni.adelaide.edu.au/courses/55529/pages/logbook" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/pages/logbook" data-api-returntype="Page">in this guide</a>.</span></strong></span></p>
+<ul>
+<li>During manual marking and plagiarisms checks, we will look look at your development process. If we do not see a clear path to a solution (i.e. code changes and regular commits and logbook entries <strong>reflecting</strong> your learning to develop your implementation you <strong>will forfeit up to 200 marks.</strong>
+</li>
+<li>
+<em>An example case of forfeiting all 200 marks would be the sudden appearance of working code with no prior evidence of your development process</em>.</li>
+<li>It is up to you to provide evidence of your development through regular submissions and logbook entries<strong>.</strong>
+</li>
+</ul>
+<p>This practical requires thought and planning. You need to start early to allow yourself time to think of what and how to test before modifying any code. Failing to do this is likely to make the practical take far more time than it should.<span style="color: #ff0000;"> <strong>Starting the practical in the final week or days is likely to be an unsuccessful strategy with this practical and further your logbook entries are likely to be overlapped in close succession and, depending on the quality of the entries, is likely to lead to a mark that will be scaled lower (due to possibly poor documentation in the logbook).</strong></span></p>
+<p>&nbsp;</p>
+<h2>Aims</h2>
+<ul>
+<li>Learn about routing protocols and route propagation.</li>
+<li>Implement a routing protocol.</li>
+</ul>
+<h2>Overview</h2>
+<p>In this assignment, you will be writing an implementation of the Distance Vector routing protocol. You will be required to implement the algorithm in its basic form, and then with <strong>poisoned reverse</strong> to improve the performance of the protocol. You will be required to demonstrate that your programs can correctly determine the routing paths for a network.</p>
+<p>You will find a more detailed description of the Distance Vector algorithm in the course notes and in section 5.2.2 of Kurose and Ross, Computer Networking, 7th Edition.</p>
+<h3>Algorithm</h3>
+<p>At each node, <i>x</i>:</p>
+<pre>D_x(y) = minimum over all v { c(x,v) + D_v(y) }
+</pre>
+<p>The cost from a node x to a node y is the cost from x to a directly connected node v plus the cost to get from v to y. This is the minimum cost considering both the cost from x to v and the cost from v to y.</p>
+<pre>At each node x:
+
+INITIALISATION:
+   for all destinations y in N:
+      D_x(y) = c(x,y) /* If y not a neighbour, c(x,y) = Infinity */
+   for each neighbour w
+      D_w(y) = Infinity for all destinations y in N
+   for each neighbour w
+      send distance vector D_x = [D_x(y): y in N] to w
+
+LOOP
+   wait (until I see a link cost change to some neighbour w or until 
+      I receive a distance vector from some neighbour w)
+   for each y in N:
+      D_x(y) = min_v{c(x,v) + D_v(y)}
+
+   if D_x(y) changed for any destination y
+      send distance vector D_x = [D_x(y): y in N] to all neighbours.
+
+FOREVER
+
+Note: Infinity is a number sufficiently large that no legal cost is greater than or equal to infinity. 
+The value of infinity is left for you to choose.
+</pre>
+<h3>Poisoned Reverse (PR)</h3>
+<p>In Poisoned Reverse, if a node A routes through another node B to get to a destination C, then A will advertise to B that its distance to C is Infinity. A will continue to advertise this to B as long as A uses B to get to C. This will prevent B from using A to get to C if B's own connection to C fails.</p>
+<h3>Sample Topology</h3>
+<p>At its most basic, your program should be able to calculate the correct routing tables for the following network:</p>
+<p><img src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/sample.png" alt="topology" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6403687" data-api-returntype="File" style="max-width: 410px;"></p>
+<h2>Your Tasks</h2>
+<p><strong>Part 1 (DV algorithm):</strong> You are to produce a program that: i) reads network configuration files specified as a command-line argument; ii) uses the distance vector algorithm to calculate the routing tables whilst outputting the updated distances at each step. In part 1 your distance vector implementation is simple and <strong>will not use</strong> poison reverse.</p>
+<p><strong>Part 2 (DV with PR algorithm):</strong> The second part of the assignment is to write a second version of the program that is the same as the first, except that this program employs poisoned reverse.</p>
+<p>The two programs you are to provide should be named: 1) <code>DistanceVector</code> and 2) <code>PoisonedReverse</code>.</p>
+<p>Both programs act in the same way, except that one uses Poisoned Reverse. Both must perform the following actions:</p>
+<ul>
+<li>Take <strong>two command line input arguments: 1)</strong> a file name representing the current configuration (<code><i>configFileName</i></code>); and <strong>2)</strong> a file name representing the changed configuration (<code><i>changedConfigName</i></code>). The second parameter is a configuration file containing changes to link weights. Link weights are bidirectional.</li>
+<li>Handle bad or missing arguments.
+<ul>
+<li>Print string <code>Bad or missing arguments</code>
+</li>
+<li>Terminate the program</li>
+</ul>
+</li>
+<li>Use DV/ DV with PR, as appropriate, to calculate the routing tables for the configuration in the first parameter (<i>configFileName)</i>.
+<ul>
+<li>Output the updated distances at each step.</li>
+<li>Output the routing tables for each router for the configuration in the first parameter (<i>configFileName)</i><i></i><i></i><i></i>
+</li>
+</ul>
+</li>
+<li>Starting from the routing tables set from processing the first parameter (<i>configFileName</i>), the links in the network will be set to those of the second configuration file (<i>changedConfigName</i>). The DV/ DV with PR algorithm should then be run until such a time as the network converges. Again you are required to<br>
+<ul>
+<li>Output the updated distances at each step.</li>
+<li>Output the routing tables for each router for the configuration in the first parameter (<i>configFileName)</i>
+</li>
+</ul>
+</li>
+</ul>
+<p>You will need to craft any internal data structures and design your program in such a way that it will reliably and correctly converge to the correct routing table. We have deliberately not provided you with a code templates and this means that you will have more freedom in your design but that you will have to think about the problem and come up with a design.</p>
+<h3>Key Assumptions</h3>
+<p>In a real DV routing environment, messages are not synchronised. Routers send out their initial messages as needed.</p>
+<p>In this environment, to simplify your programs, you should assume:</p>
+<ul>
+<li>All routers come up at the same time at the start.</li>
+<li>If an update needs to be sent at a given round of the algorithm, all routers will send their update at the same time, if they have an update to send.</li>
+<li>The next set of updates will only be sent once all routers have received and processed the updates from the previous round.</li>
+<li>Where a router receives a number of updates, the router will process the updates in alphabetical order by router name (of the router that sent the update).</li>
+<li>When choosing between paths of equal cost, the router will use the path it learned of first (in other words, keep the known path).</li>
+<li>When a direct link is updated and the update affects the routing table:
+<ul>
+<li>Choose the new best route from the distance table, searching in alphabetical order.</li>
+<li>Where multiple best routes exist, the first one is used.</li>
+</ul>
+</li>
+<li>Use <code>INF</code> to represent infinity values in your output.</li>
+</ul>
+<p>You should confirm for yourself that the assumptions above will not change the least-cost path routing table that will be produced at the nodes. (Although, for some topologies, you may take different paths for the same cost.)</p>
+<h3>Software/Language</h3>
+<p>You may complete this assignment using the programming language of your choice, <strong>with the following restrictions</strong>:</p>
+<ul>
+<li>For compiled languages (Java, C, C++ etc.) you must provide a Makefile.
+<ul>
+<li>Your software will be compiled with <code>make</code>
+</li>
+<li>Pre-compiled programs will not be accepted.</li>
+</ul>
+</li>
+<li>Your implementation must work with the versions of programming languages installed on the Web Submission system, these are the same as those found in the labs and on the <strong>uss.cs</strong> server and include (but are not limited to):
+<ul>
+<li>
+<strong>C/C++:</strong> g++ (GCC) 4.8.5</li>
+<li>
+<strong>Java:</strong> java version "1.8.0_201"</li>
+<li>
+<strong>Python:</strong> python 2.7.5</li>
+</ul>
+</li>
+<li>Your implementation may use any libraries/classes available on Web Submission system, but <strong>no external libraries/classes/modules</strong>.</li>
+<li>
+<p>Your programs will be executed with the command format:</p>
+<pre>make
+./DistanceVector <i>configFileName</i> <i>changedConfigName</i>
+./PoisonedReverse <i>configFileName</i> <i>changedConfigName</i>
+</pre>
+<p>or for java:</p>
+<pre>make
+java DistanceVector <i>configFileName</i> <i>changedConfigName</i>
+java PoisonedReverse <i>configFileName</i> <i>changedConfigName</i>
+</pre>
+</li>
+</ul>
+<h3>Input: Configuration File Format</h3>
+<p>As seen above your program will be be run with <em><strong>two filenames as command line arguments</strong></em>.</p>
+<p>The first file describes the topology and consists of 4 sections:</p>
+<ol>
+<li>The first line is a number, <em><strong>x</strong></em>, that indicates the number of routers/nodes in the topology.
+<ul>
+<li>e.g.
+<pre>3</pre>
+</li>
+</ul>
+</li>
+<li>The following <em><strong>x</strong></em> lines contain the names of each router/node in the topology.
+<ul>
+<li>e.g.
+<pre>X
+Y
+Z</pre>
+</li>
+</ul>
+</li>
+<li>The the next line is a number, <em><strong>y</strong></em>, that indicates the number of links/edges in the topology.
+<ul>
+<li>e.g.
+<pre>2</pre>
+</li>
+</ul>
+</li>
+<li>The following <strong><em>y</em></strong><em><strong></strong></em> lines contain the details of each link/edge in the topology.
+<ul>
+<li>Written as the names of two routers/nodes followed by the weight of that link/edge, all separated by spaces.</li>
+<li>e.g.
+<pre>X Y 10
+Y Z 8</pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>The second file describes the the changes to the link/edge weights and consists of 2 sections:</p>
+<ol>
+<li>The first next line is a number, <em><strong>y</strong></em>, that indicates the number changed links/edges in the topology.
+<ul>
+<li>e.g.
+<pre>1</pre>
+</li>
+</ul>
+</li>
+<li>The following <strong><em>y</em></strong><em><strong></strong></em> lines contain the the new weight of each changed link/edge in the topology.
+<ul>
+<li>Written the same as in the first file.</li>
+<li>Only contains changed links/edges. Where a link is omitted, there is no change to its weight.</li>
+<li>No new links will be added in this section.</li>
+<li>e.g.
+<pre>Y Z 6</pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>You are provided a <a class="instructure_file_link" title="config0" href="https://myuni.adelaide.edu.au/courses/55529/files/6403689/download?wrap=1" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6403689" data-api-returntype="File">sample config file</a> that matches the sample topology above. You are also provided a <a class="instructure_file_link" title="changeConfig0" href="https://myuni.adelaide.edu.au/courses/55529/files/6403688/download?wrap=1" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6403688" data-api-returntype="File">sample change config file</a>.</p>
+<p>Note that there is a number to give the number of changed links and then the link weight change(s).</p>
+<h3>Output Format</h3>
+<p>As this is Distance Vector, a node will only be able to communicate with its neighbours. Thus, node U can only tell if it is sending data to V, W or X. You should indicate which interface the packets will be sent through, as shown below.</p>
+<p>Your output should consist of 4 sections:</p>
+<ol>
+<li>The first section
+<ol>
+<li>Begins with the line #START</li>
+<li>Is followed by lines of the format <code>t=<em><strong>n</strong></em> distance from <em><strong>A</strong></em> to <em><strong>B</strong></em> via <em><strong>C</strong></em> is <em><strong>d</strong></em></code> , describing the routing updates at each router at during each step towards convergence, where<br>
+<ul>
+<li>
+<code><em><strong>n</strong></em></code> is the number the current step.
+<ul>
+<li>A value of <code>0</code> is the initial state as specified in the input file.</li>
+<li>A value of <code>1</code> is the updated state after all routers have sent their first update to their neighbours.</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>
+<code><em><strong>A</strong></em></code> is the name of the source router/node</li>
+<li>
+<code><em><strong>B</strong></em></code> is the name of the destination router/node</li>
+<li>
+<code><em><strong>C</strong></em></code> is name of&nbsp; an immediate neighbour of <code><em><strong>A</strong></em></code>
+<ul>
+<li>For directly connected nodes, <code>C</code> will have the same value as <code>B</code>
+</li>
+</ul>
+</li>
+<li>
+<code><em><strong>d</strong></em></code> is a the current total distance from <code><em><strong>A</strong></em></code> to <code><em><strong>B</strong></em></code> routing via <code><em><strong>C</strong></em></code>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>The 2nd section
+<ol>
+<li>Begins with the line #INITIAL</li>
+<li>Is followed by lines of the format <code>router <em><strong>A</strong></em>: <em><strong>B</strong></em> is <em><strong>d</strong></em> routing through <em><strong>C</strong></em></code> , describing the current routing table of each router/node in the system, where
+<ul>
+<li>
+<code><em><strong>A</strong></em></code> is the name of the source router/node</li>
+<li>
+<code><em><strong>B</strong></em></code> is the name of the destination router/node</li>
+<li>
+<code><em><strong>C</strong></em></code> is name of&nbsp; an immediate neighbour of <code><em><strong>A</strong></em></code>
+</li>
+<li>
+<code><em><strong>d</strong></em></code> is a the current total distance from <code><em><strong>A</strong></em></code> to <code><em><strong>B</strong></em></code> routing via <code><em><strong>C</strong></em></code>
+</li>
+<li>Only reachable/known routers should be shown here.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>The 3rd section<br>
+<ol>
+<li>Begins with the line <code>#UPDATE</code>
+</li>
+<li>Is followed by lines of the same format as described in section 1 as the changed weights are applied.</li>
+</ol>
+</li>
+<li>The 4th section<br>
+<ol>
+<li>Begins with the line <code>#FINAL</code>
+</li>
+<li>Is followed by lines of the same format as described in section 2, but after the system has reached convergence with the changed weights.</li>
+</ol>
+</li>
+</ol>
+<p>Below is an example of what this output should look like (shortened).</p>
+<pre>#START
+
+t=0 distance from V to W via W is 2<br>t=0 distance from V to X via X is 2
+...
+t=2 distance from V to Z via W is 10
+t=2 distance from V to Z via X is 4<br>... 
+
+#INITIAL
+
+router V: X is 1 routing through X<br>router V: W is 1 routing through X
+router V: Y is 2 routing through X
+router V: Z is 4 routing through X
+...
+router Z: V is 5 routing through X<br>router Z: W is 2 routing through W
+router Z: X is 3 routing through Y
+router Z: Y is 2 routing through Y
+
+#UPDATE
+
+t=0 distance from V to W via W is 12 
+t=0 distance from U to X via X is 11<br>...
+
+#FINAL
+
+router V: W is 3 routing through X
+...
+router Z: Y is 2 routing through Y
+
+</pre>
+<p>&nbsp;</p>
+<h3>Example</h3>
+<p>The following files are the expected inputs/outputs for the basic example shown in the <a title="Network Layer - Control Plane (lecture material)" href="https://myuni.adelaide.edu.au/courses/55529/pages/network-layer-control-plane-lecture-material" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/pages/network-layer-control-plane-lecture-material" data-api-returntype="Page">Lecture Slides</a></p>
+<ul>
+<li><a class="instructure_file_link" title="configL" href="https://myuni.adelaide.edu.au/courses/55529/files/6485845/download?wrap=1" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6485845" data-api-returntype="File">config file</a></li>
+<li><a class="instructure_file_link" title="changeConfigL" href="https://myuni.adelaide.edu.au/courses/55529/files/6485844/download?wrap=1" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6485844" data-api-returntype="File">changed config file</a></li>
+<li><a class="instructure_file_link" title="outputL" href="https://myuni.adelaide.edu.au/courses/55529/files/6485846/download?wrap=1" data-api-endpoint="https://myuni.adelaide.edu.au/api/v1/courses/55529/files/6485846" data-api-returntype="File">output</a></li>
+</ul>
+<p>&nbsp;</p>
+<h3>Recommended Approach</h3>
+<ol>
+<li>Start by ensuring you're familiar with the DV algorithm.<br>
+<ul>
+<li>Review the course notes, section 5.2.2 of Kurose &amp; Ross (7th Ed.), and the <a href="https://en.wikipedia.org/wiki/Distance-vector_routing_protocol" class="external" target="_blank" rel="noreferrer noopener"><span>Wikipedia entry</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a>.</li>
+<li>Be sure to add logbook entries as you go.</li>
+</ul>
+</li>
+<li>Manually determine the expected distance and routing tables at each step for the sample topology
+<ul>
+<li>Feel free to ask questions and check your tables with your peers on Piazza.</li>
+<li>Be sure to add logbook entries as you go.</li>
+</ul>
+</li>
+<li>Plan your implementation
+<ul>
+<li>Determine what data structures you'll need, choose a programming language, plan how you're going to parse the input files and generate output, plan your algorithm's implementation.</li>
+<li>Be sure to add logbook entries as you go.</li>
+</ul>
+</li>
+<li>Implementation
+<ul>
+<li>Develop your implementation, testing as you go.</li>
+<li>Write a makefile if required.</li>
+<li>Be sure to add logbook entries as you go.</li>
+</ul>
+</li>
+<li>Testing
+<ul>
+<li>Ensure your code runs on the university systems.</li>
+<li>Develop additional scenarios and topologies to ensure your systems function as expected.</li>
+<li>Be sure to add logbook entries as you go.</li>
+</ul>
+</li>
+</ol>
+<h3>Submission</h3>
+<p>Create and checkout a new folder in your SVN repository at <br><code>https://version-control.adelaide.edu.au/svn/aXXXXXXX/yyyy/s1/cna/routing</code></p>
+<h2>Assessment</h2>
+<p>The assignment is marked out of 200. These 200 marks are allocated as follows using automated testing:</p>
+<ul>
+<li>Acceptance Testing (available to each submission before deadline; see below for details)
+<ul>
+<li>DistanceVector correctly calculates the routing table for sample configuration: <strong>45 marks</strong>
+</li>
+<li>DistanceVector correctly calculates the routing table after the link weights are changed: <strong>25 marks</strong>
+</li>
+</ul>
+</li>
+<li>Full Testing (<em><strong>applied only after the deadline and grace period</strong></em>; see below for details)
+<ul>
+<li>PoisonedReverse correctly calculates the routing table for sample configuration: <strong>15 marks</strong>
+</li>
+<li>PoisonedReverse calculates the routing table after the link weights are changed: <strong>15 marks</strong>
+</li>
+</ul>
+</li>
+<li>Both programs <em>DistanceVector</em> and <em>PoisonedReverse</em> and correctly calculate tables for arbitrary unseen networks: <strong>70 marks for DV and 30 marks for DV with PR (total of 100 marks)<br></strong>
+</li>
+<li>
+<strong>All marks above are from passing Web Submission tests</strong>. No additional marks are given after a manual review.</li>
+</ul>
+<p>However, your marks are <strong>scaled and reviewed</strong> based on the following:</p>
+<ol>
+<li>Up to 10 marks may be deducted for poor code quality. Below is a code quality checklist to help (notably this is not an exhaustive list but describes our expectations):</li>
+</ol>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li>write comments above the header of each of your methods, describing</li>
+<li>what the method is doing, what are its inputs and expected outputs</li>
+<li>describe in the comments any special cases</li>
+<li>create modular code, following cohesion and coupling principles</li>
+<li>don't use magic numbers</li>
+<li>don't misspell your comments</li>
+<li>don't use incomprehensible variable names</li>
+<li>don't have long methods (not more than 80 lines)</li>
+<li>don't have&nbsp;TODO blocks remaining</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. As noted earlier, up to 200 marks (all marks) may be deducted for poor/insufficient/missing evidence of development process.</p>
+<p>The two above will be assessed manually. To obtain all of the marks allocated from tests, <em>you will need to ensure your code is of sufficient quality and document your development process using the logbook entries</em>.</p>
+<h3>Marking Process</h3>
+<p>You should not be using Web Submission for debugging. As part of your design phase, you should work out what sequence of updates you expect to happen and what you expect the final distance tables will be.&nbsp; As such your submission will be marked in <strong>3 stages</strong>:</p>
+<ol>
+<li>All submissions before the deadline will be run against an acceptance testing script.
+<ul>
+<li>This script will compile your programs, and run your DistanceVector code for config0.</li>
+<li>Use this as a sanity check to ensure your code runs on the WebSubmission system and works as expected for config0.<strong><br></strong>
+</li>
+<li>Be sure to add a logbook entry for each submission you make here.</li>
+</ul>
+</li>
+<li>After the deadline <strong>your most recent submission (before the deadline+grace period)</strong> will be run against the full testing script.
+<ul>
+<li>This script will run the tests from the acceptance testing script as well as a number of additional tests against both your DistanceVector and PoisonedReverse code.</li>
+<li>It's important that you've thoroughly tested your implementation to ensure it will be able to pass these, as you will only get 1 chance at them.</li>
+</ul>
+</li>
+<li>You code will then be reviewed for quality and evidence of your development process by a marker. Marks will be deducted if your code and/or development process are not of a reasonable standard.<br><strong></strong><strong>Note:</strong> This is not a review of code functionality, and you will not receive extra testing marks for it.</li>
+</ol></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1591342200</span>
+    <span class="due_date_string">06/05/2020</span>
+    <span class="due_time_string">05:00pm</span>
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="rubrics" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment">
+      <input type="hidden" name="rubric_association[association_id]" value="158776">
+      <input type="hidden" name="rubric_association[purpose]" value="grading">
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div class="criterion_description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;" tabindex="-1"></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea id="criterion_comments_textarea" class="criterion_comments" name="criterion_comments" style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div class="toggle_for_hide_points">
+        <div><label id="rating_form_score_label" class="rating_form_label">Rating Score</label></div>
+        <span id="rating_form_max_score_label" hidden="">Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1">
+        <span class="range_rating">to &gt;
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min">
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description">
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div class="rubric_container rubric  " id="default_rubric" style="display: none;">
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a href="https://myuni.adelaide.edu.au/courses/55529/rubrics/%7B%7B%20id%20%7D%7D" class=" edit_rubric_link no-print no-hover" style="" title="Edit Rubric" aria-label="Edit Rubric" role="button"><i class="icon-edit standalone-icon"></i></a>
+      <a href="https://myuni.adelaide.edu.au/search/rubrics?q=" class="find_rubric_link no-print no-hover" style="" title="Find Another Rubric" aria-label="Find Another Rubric" role="button"><i class="icon-search standalone-icon"></i></a>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D" class="delete_rubric_link no-print no-hover" style="" title="Delete Rubric" aria-label="Delete Rubric" role="button"><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="hide_outcome_results">&nbsp;</div>
+        <div class="hide_points">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+          <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="https://myuni.adelaide.edu.au/courses/55529/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can't change a rubric once you've started using it.</span>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://myuni.adelaide.edu.au/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:">
+      <a href="https://myuni.adelaide.edu.au/search/rubrics?q=" style="display: none;"><img alt="" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/find-6164443e2a.png"> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You've already rated students with this rubric. Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col" class="toggle_for_hide_points ">
+      Pts
+    </th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank" style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr id="criterion_1" class="criterion" style="display: table-row;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome ">
+          <div class="criterion_use_range_div editing toggle_for_hide_points ">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range"></label>
+          </div>
+        </div>
+        <div class="threshold toggle_for_hide_points ">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tbody><tr>
+          <td id="rating_blank" class="rating edge_rating
+                
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">5</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">Full Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank</span>
+              </div>
+                <div class="editing links add_rating_link">
+                  <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+                </div>
+            </div>
+          </td>
+          <td id="rating_blank_2" class="rating edge_rating
+                infinitesimal
+                ">
+            <div class="container">
+              <div class="rating-main">
+                  <div class="editing links">
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                    <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="delete_rating_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete rating</span></a>
+                  </div>
+                  <div class="clear"></div>
+                <span class="nobr toggle_for_hide_points ">
+                  <span class="points">0</span>
+                  <span class="range_rating" style="display: none;">to &gt;<span class="min_points">0</span></span> pts
+                </span>
+                <div class="description rating_description_value">No Marks</div>
+                <div class="rating_long_description small_description"></div>
+                <span class="rating_id" style="display: none;">blank_2</span>
+              </div>
+            </div>
+          </td>
+      </tr></tbody></table>
+      <div style="display: none; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form toggle_for_hide_points ">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input type="text" aria-label="Points" value="5" class="criterion_points span1 no-margin-bottom">
+           pts
+      </span><br>
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br>
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="https://myuni.adelaide.edu.au/courses/55529/assignments/158776#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/rubric_comment-ddae8546ab.png">
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr><tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder toggle_for_hide_points " style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tbody><tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating">
+          <label for="rubric_custom_rating">I'll write free-form comments when assessing students</label>
+        </div>
+          <div class="hide_points" style="">
+            <input type="checkbox" id="hide_points" class="hide_points_checkbox">
+            <label for="hide_points">Remove points from rubric</label>
+          </div>
+          <div class="hide_outcome_results" style="">
+            <input type="checkbox" id="hide_outcome_results" class="hide_outcome_results_checkbox">
+            <label for="hide_outcome_results">Don't post Outcomes results to Learning Mastery Gradebook</label>
+          </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox">
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox">
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</tbody></table>
+
+
+  <div id="assignment_external_tools"><div></div></div>
+
+  
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    <div class="ajas-search-widget ajas-search-widget--course">
+    <form id="ajas-search-form" class="ajas-search-widget__form" action="https://myuni.adelaide.edu.au/courses/55529/external_tools/1928" method="get" role="search">
+      <label for="ajas-search01" class="ajas-search-widget-hidden">Search</label>
+      <input type="text" placeholder="Search..." id="ajas-search01">
+      <button aria-label="submit search" class="ajas-search-widget__btn--search" type="submit">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="-515 337 48 48" enable-background="new -515 337 48 48">
+    <path d="M-484,365h-1.6l-0.5-0.5c2-2.3,3.1-5.2,3.1-8.5c0-7.2-5.8-13-13-13s-13,5.8-13,13s5.8,13,13,13c3.2,0,6.2-1.2,8.5-3.1 l0.5,0.5v1.6l10,10l3-3L-484,365z M-496,365c-5,0-9-4-9-9s4-9,9-9s9,4,9,9S-491,365-496,365z"></path>
+    <path fill="none" d="M-515,337h48v48h-48V337z"></path>
+  </svg>
+      </button>
+    </form>
+  </div></div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">61f6cc18-01cd-4691-9588-b262550bb17d</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+  
+
+  <script>
+    Object.assign(
+      ENV,
+      {}
+    )
+  </script>
+
+
+<script>
+//<![CDATA[
+
+      ;["https://instructure-uploads-apse2.s3.ap-southeast-2.amazonaws.com/account_70360000000000001/attachments/6472929/UofA_canvas.js"].forEach(function(src) {
+        var s = document.createElement('script')
+        s.src = src
+        s.async = false
+        document.head.appendChild(s)
+      });
+//]]>
+</script>
+
+</div> <!-- #application -->
+
+
+<div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><script src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/dcl-react.js.gz" type="text/javascript"></script><script charset="UTF-8" src="./Practical 3 (COVID-19 Modified Assessment)_ Routing Algorithm Implementation Assignment_files/h5p-resizer.js"></script><div class="tinymce-a11y-checker-container"></div></body></html>

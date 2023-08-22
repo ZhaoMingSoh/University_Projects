@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/zhaomingsoh/Desktop/2021_Adelaide_Uni/sem_1/Data_Mining_3306/Assignment_3/Assign_3/Exercise 1/.metadata/.plugins/org.eclipse.jdt.core
+3764862655.index
+4000689033.index

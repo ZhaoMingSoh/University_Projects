@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <Feed>
+    <title>My example feed</title>
+    <subtitle>for demonstration purposes</subtitle>
+    <link>www.cs.adelaide.edu.au</link>
+    <updated>2015-08-07T18:30:02Z</updated>
+    <author>
+      <name>Santa Claus</name>
+    </author>
+    <id>urn::uuid:60a76c80-d399-11d9-b93C-0003939e0af6</id>
+    <entry>
+      <title>Nick sets assignment</title>
+      <link>www.cs.adelaide.edu.au/users/third/ds/</link>
+      <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a</id>
+      <updated>2015-08-07T18:30:02Z</updated>
+      <author>
+        <name>Santa Claus</name>
+      </author>
+      <summary>here is some plain text. Because I'm not completely evil, you can assume that this will always be less than 1000 characters. And, as I've said before, it will always be plain text.</summary>
+    </entry>
+    <entry>
+      <title>second feed entry</title>
+      <link>www.cs.adelaide.edu.au/users/third/ds/14ds2s1</link>
+      <id>urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6b</id>
+      <updated>2015-08-07T18:29:02Z</updated>
+      <author>
+        <name>Santa Claus</name>
+      </author>
+      <summary>here's another summary entry which a reader would normally use to work out if they wanted to read some more. It's quite handy.</summary>
+    </entry>
+  </Feed>
+  <Feed>
+    <title>BBC America</title>
+    <subtitle />
+    <link>https://www.bbcamerica.com</link>
+    <updated>2021-09-15T13:34:50Z</updated>
+    <author>
+      <name />
+    </author>
+    <id>https://www.bbcamerica.com/feed/atom</id>
+    <entry>
+      <title>Casting News: &amp;#8216;Small Axe&amp;#8217; Actor Malachi Kirby to Star in Neil Gaiman&amp;#8217;s &amp;#8216;Anansi Boys&amp;#8217; Series</title>
+      <link>https://www.bbcamerica.com/anglophenia/2021/09/casting-news-small-axe-actor-malachi-kirby-to-star-in-neil-gaimans-anansi-boys-series</link>
+      <id>https://www.bbcamerica.com/?p=478664</id>
+      <updated>2021-09-15T13:34:50Z</updated>
+      <summary>(Photo: Getty Images) Neil Gaiman&amp;#8216;s Anansi Boys series has found its lead: rising star Malachi Kirby, who recently won a BAFTA TV Award for his performance in Steve McQueen&amp;#8216;s Small Axe series. Kirby will play dual roles in the fantasy adaptation: Charlie Nancy and his brother Spider, Variety reports. The series centers on Charlie, a [&amp;#8230;</summary>
+    </entry>
+  </Feed>
+</Feed>

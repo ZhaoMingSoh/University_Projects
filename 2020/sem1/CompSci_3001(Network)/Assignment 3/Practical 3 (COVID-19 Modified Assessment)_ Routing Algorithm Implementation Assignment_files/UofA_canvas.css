@@ -1,0 +1,316 @@
+
+/*********************************************************************/
+/***** BEGIN CIDILABS ************************************************/
+/*********************************************************************/
+/***** BEGIN DESIGN TOOLS THEME IMPORT & CUSTOMIZATION  **************/
+/*********************************************************************/
+/* Import statements need to be at the top of your CSS file */
+/* For Main CSS file */
+@import url(https://designtools.ciditools.com/css/themes.css);
+/* For Mobile app CSS file */
+/*@import url(https://designtools.ciditools.com/css/app.css);*/
+/* Institution color customizations */
+@import url(https://designtools.ciditools.com/css/inst_theme_overrides.css);
+/* Theme Colors */
+:root {
+  --dt-color-primary: #005A9C;
+  --dt-color-primary-contrast: #FFFFFF;
+  --dt-color-primary-dark-text: #005A9C;
+  --dt-color-secondary: #D40000;
+  --dt-color-secondary-contrast: #FFFFFF;
+  --dt-color-secondary-dark-text: #D40000;
+  --dt-color-accent: #B38808;
+  --dt-color-accent-contrast: #000000;
+  --dt-color-graybg: #E6E6E6;
+  --dt-color-graybg-contrast: #000000;
+}
+/*********************************************************************/
+/***** END DESIGN TOOLS HEME IMPORT & CUSTOMIZATION   ****************/
+/*********************************************************************/
+
+/* Datacamp Light */
+[data-datacamp-exercise] { visibility: hidden; } /* new version of DCL only */
+.datacamp-exercise { position: relative; z-index: 1; }
+.datacamp-exercise a.external .ui-icon-extlink { display: none; }
+.datacamp-exercise a[class*="githubLink"] { display: none; }
+.ace_text-layer * {
+    font: 13.65px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+}
+
+.dcl-skip-link:focus {
+    clip: unset;
+    width: auto;
+    height: auto;
+    clip-path: none;
+    top: -26px;
+    left: 5px;
+    z-index: 2;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 0 5px;
+    border-radius: 1px;
+}
+/* end Datacamp Light */
+
+/*login box*/
+.ic-app-header__logomark {
+  background-size: 85%;
+}
+
+body.modal #modal-box.login-box {
+  background: url(https://s3.amazonaws.com/SSL_Assets/Adelaide/Styles/Images/logo_long.png) no-repeat 50% 20%;
+  background-size: 470px;
+  background-color: rgba(255, 255, 255, .75);
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+body.modal.no-headers #footer-links a {
+  color: #fff;
+}
+
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 {
+  background: none;
+  height: 200px;
+}
+
+body.modal #footer {
+  display: none !important;
+}
+
+/*resize the login box to fit my image and change the color of 'stay signed in'*/
+body.modal #modal-box.login-box {
+  height: 405px;
+  width: 623px;
+  color: #071135;
+}
+
+#modal-box .btn {
+  margin-right: 10px !important;
+}
+
+/*change the color of the login button*/
+body.modal #modal-box .button,
+body.modal #login-box .button {
+  background-color: #727272!important;
+  background-image: none !important;
+  border-color: #727272;
+}
+
+#login_form .btn-primary {
+  background-color: #727272;
+  background-image: none;
+  border-color: #727272;
+  color: #fff;
+  -webkit-transition: all 500ms ease-out .5s;
+  -moz-transition: all 500ms ease-out .5s;
+  -o-transition: all 500ms ease-out .5s;
+  transition: all 500ms ease-out .5s;
+}
+
+#login_form .btn-primary:hover {
+  background-color: #212B60;
+  background-image: none;
+  border-color: #212B60;
+  color: #fff;
+  -webkit-transition: all 500ms ease-out .5s;
+  -moz-transition: all 500ms ease-out .5s;
+  -o-transition: all 500ms ease-out .5s;
+  transition: all 500ms ease-out .5s;
+}
+
+#modal-box.login-box {
+  background-color: transparent;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#login_form .login-options {
+  color: gray;
+}
+
+.menu-item .menu-item-drop .menu-item-drop-column .menu-item-heading,
+#menu_enrollments .customListOpen {
+  line-height: 14px !important;
+}
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a {
+  color: gray !important;
+}
+
+body.modal.no-headers .melbourneparallax,
+body.modal.no-headers .melbourneparallaxtop {
+  display: none;
+}
+
+body.modal.no-headers #application {
+  background: none !important;
+}
+
+#forgot_password_instructions {
+  color: #333 !important;
+}
+
+body.modal #modal-box.login-box a {
+  color: #333 !important;
+}
+
+.ic-app-header__logomark {
+  background-size: 80px;
+}
+
+#footer a.footer-logo,
+#footer-links {
+  display: none;
+}
+
+#footer {
+  background: url("https://staticweb.adelaide.edu.au/myuni/canvas-footer.jpg");
+  height: 30px;
+}
+
+/* this hides 'Delete My Account' button in user account settings */
+a[href="http://www.canvaslms.com/policies/withdrawal-form"] {
+  display: none !important;
+}
+
+.mce-i-codesample {
+  display: inline !important;
+}
+/*********************************************************************/
+/***** END CIDILABS **************************************************/
+/*********************************************************************/
+
+/*login box*/
+.ic-app-header__logomark {
+  background-size: 85%;
+}
+
+body.modal #modal-box.login-box {
+  background: url(https://s3.amazonaws.com/SSL_Assets/Adelaide/Styles/Images/logo_long.png) no-repeat 50% 20%;
+  background-size: 470px;
+  background-color: rgba(255, 255, 255, .75);
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+body.modal.no-headers #footer-links a {
+  color: #fff;
+}
+
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 {
+  background: none;
+  height: 200px;
+}
+
+body.modal #footer {
+  display: none !important;
+}
+
+/*resize the login box to fit my image and change the color of 'stay signed in'*/
+body.modal #modal-box.login-box {
+  height: 405px;
+  width: 623px;
+  color: #071135;
+}
+
+#modal-box .btn {
+  margin-right: 10px !important;
+}
+
+/*change the color of the login button*/
+body.modal #modal-box .button,
+body.modal #login-box .button {
+  background-color: #727272!important;
+  background-image: none !important;
+  border-color: #727272;
+}
+
+#login_form .btn-primary {
+  background-color: #727272;
+  background-image: none;
+  border-color: #727272;
+  color: #fff;
+  -webkit-transition: all 500ms ease-out .5s;
+  -moz-transition: all 500ms ease-out .5s;
+  -o-transition: all 500ms ease-out .5s;
+  transition: all 500ms ease-out .5s;
+}
+
+#login_form .btn-primary:hover {
+  background-color: #212B60;
+  background-image: none;
+  border-color: #212B60;
+  color: #fff;
+  -webkit-transition: all 500ms ease-out .5s;
+  -moz-transition: all 500ms ease-out .5s;
+  -o-transition: all 500ms ease-out .5s;
+  transition: all 500ms ease-out .5s;
+}
+
+#modal-box.login-box {
+  background-color: transparent;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#login_form .login-options {
+  color: gray;
+}
+
+.menu-item .menu-item-drop .menu-item-drop-column .menu-item-heading,
+#menu_enrollments .customListOpen {
+  line-height: 14px !important;
+}
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a {
+  color: gray !important;
+}
+
+body.modal.no-headers .melbourneparallax,
+body.modal.no-headers .melbourneparallaxtop {
+  display: none;
+}
+
+body.modal.no-headers #application {
+  background: none !important;
+}
+
+#forgot_password_instructions {
+  color: #333 !important;
+}
+
+body.modal #modal-box.login-box a {
+  color: #333 !important;
+}
+
+.ic-app-header__logomark {
+  background-size: 80px;
+}
+
+#footer a.footer-logo,
+#footer-links {
+  display: none;
+}
+
+#footer {
+  background: url("https://staticweb.adelaide.edu.au/myuni/canvas-footer.jpg");
+  height: 30px;
+}
+
+/* this hides 'Delete My Account' button in user account settings */
+a[href="http://www.canvaslms.com/policies/withdrawal-form"] {
+  display: none !important;
+}
+
+.mce-i-codesample {
+  display: inline !important;
+}

@@ -1,0 +1,12 @@
+title:BBC America
+subtitle:
+link:https://www.bbcamerica.com
+updated:2021-09-15T13:34:50Z
+author:
+id:https://www.bbcamerica.com/feed/atom
+entry
+title:Casting News: &#8216;Small Axe&#8217; Actor Malachi Kirby to Star in Neil Gaiman&#8217;s &#8216;Anansi Boys&#8217; Series
+link:https://www.bbcamerica.com/anglophenia/2021/09/casting-news-small-axe-actor-malachi-kirby-to-star-in-neil-gaimans-anansi-boys-series
+id:https://www.bbcamerica.com/?p=478664
+updated:2021-09-15T13:34:50Z
+summary:(Photo: Getty Images) Neil Gaiman&#8216;s Anansi Boys series has found its lead: rising star Malachi Kirby, who recently won a BAFTA TV Award for his performance in Steve McQueen&#8216;s Small Axe series. Kirby will play dual roles in the fantasy adaptation: Charlie Nancy and his brother Spider, Variety reports. The series centers on Charlie, a [&#8230;

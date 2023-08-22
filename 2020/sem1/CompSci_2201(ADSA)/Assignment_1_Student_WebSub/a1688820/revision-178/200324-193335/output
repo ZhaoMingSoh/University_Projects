@@ -1,0 +1,22 @@
+$ websubmit-automark -g 4 -n a1688820 -x a1688820 -a 2020/s1/adsa/assignment1@178 -r 178 -f /users/assessment/websubmit/2020/s1/adsa/assignment1/Web-Submission/a1688820/revision-178 -d 200324-193335 -e -u https://version-control.adelaide.edu.au/svn/ 2020/s1/adsa/assignment1
+****************************************************************************************************************** 
+Web Submission Script for Assignment Key: 2020/s1/adsa/assignment1  User: a1688820 SVN Exported revision 178.
+******************************************************************************************************************
+Submitted Files:
+
+.:
+total 4
+-rw-rw---- 1 legend teaching 3068 Mar 24 19:32 main.cpp
+****************************************************************************************************************** 
+Output From Web Submission Script:
+main.cpp: In function ‘int main()’:
+main.cpp:122:26: error: ‘assert’ was not declared in this scope
+  assert(input.size() == 3);
+                          ^
+Traceback (most recent call last):
+  File "mark.py", line 51, in <module>
+    assert os.path.isfile('main.out'), 'does not compile'
+AssertionError: does not compile
+cat: markoutput: No such file or directory
+****************************************************************************************************************** 
+Web Submission Script Complete.

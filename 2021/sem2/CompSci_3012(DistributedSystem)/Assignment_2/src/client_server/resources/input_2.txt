@@ -1,0 +1,27 @@
+title:The WordPress.com Blog
+subtitle:The latest news on WordPress.com and the WordPress community.
+link:https://wordpress.com/blog
+updated:2021-08-31T15:08:47Z
+author:
+id:http://wordpress.com/blog/feed/atom/
+entry
+title:Expanded Button Formatting, New Spacing Controls, and Drag-and-Drop for List View Now in Block Editor
+link:https://wordpress.com/blog/2021/08/31/block-editor-updates-7/
+id:http://en.blog.wordpress.com/?p=45042
+author:Seth McLellan
+updated:2021-08-31T15:08:47Z
+summary:This month, our team released features in the block editor that give your site a little breathing room: spacing controls for buttons and paragraphs.
+entry
+title:Meet the Customers We&#8217;re Featuring at the WordPress.com Growth Summit
+link:https://wordpress.com/blog/2021/08/16/meet-customers-at-the-wordpress-com-growth-summit/
+author:Jeff Rozic
+id:http://en.blog.wordpress.com/?p=45014
+updated:2021-08-16T22:00:11Z
+summary:We are proud to feature Jessica Petrie of Yoga Next Door, HBCU Gameday, and other inspiring customers at the second Official WordPress.com Growth Summit, on Tuesday, August 17.
+entry
+title:Faster, More Flexible Editing of Your Sidebars, Headers, and Footers: Blocks for Widgets
+link:https://wordpress.com/blog/2021/08/10/block-based-widgets/
+author:Seth McLellan
+id:http://en.blog.wordpress.com/?p=44925
+updated:2021-08-10T17:58:57Z
+summary:Great news: the block editor you’re familiar with in pages and posts is now part of the widgets editor.

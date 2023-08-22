@@ -1,0 +1,43 @@
+$ websubmit-automark -g 4 -n a1783911 -x a1783911 -a 2020/s1/adsa/assignment1@309 -r 309 -f /users/assessment/websubmit/2020/s1/adsa/assignment1/Web-Submission/a1783911/revision-309 -d 200327-174842 -e -u https://version-control.adelaide.edu.au/svn/ 2020/s1/adsa/assignment1
+****************************************************************************************************************** 
+Web Submission Script for Assignment Key: 2020/s1/adsa/assignment1  User: a1783911 SVN Exported revision 309.
+******************************************************************************************************************
+Submitted Files:
+
+.:
+total 12
+-rw-rw---- 1 legend teaching 8640 Mar 27 17:48 main.cpp
+****************************************************************************************************************** 
+Output From Web Submission Script:
+main.cpp: In member function ‘std::string Add::performAddition()’:
+main.cpp:77:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int index = 0; index < sumPartials.size(); index++) {
+                                                          ^
+main.cpp: In member function ‘std::string Multiplication::findDiff(std::string, std::string)’:
+main.cpp:145:41: error: ‘reverse’ was not declared in this scope
+         reverse(str1.begin(), str1.end()); 
+                                         ^
+main.cpp: In member function ‘std::string Multiplication::subtract(std::string, std::string)’:
+main.cpp:201:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (lhs.size() < length) 
+                             ^
+main.cpp:204:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (rhs.size() < length) 
+                             ^
+main.cpp: In member function ‘std::string Multiplication::multiply(std::string, std::string)’:
+main.cpp:233:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (lhs.size() < length) 
+                             ^
+main.cpp:236:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         while (rhs.size() < length) 
+                             ^
+main.cpp:241:17: warning: unused variable ‘size’ [-Wunused-variable]
+             int size = to_string(mul).length();
+                 ^
+Traceback (most recent call last):
+  File "mark.py", line 51, in <module>
+    assert os.path.isfile('main.out'), 'does not compile'
+AssertionError: does not compile
+cat: markoutput: No such file or directory
+****************************************************************************************************************** 
+Web Submission Script Complete.

@@ -1,0 +1,136 @@
+---
+title: "a1751699_A3"
+author: "Zhao Ming Soh"
+date: "19/05/2022"
+output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+pacman::p_load(tidyverse, gglm, broom)
+```
+
+## a) Read the data in
+```{r}
+lung_cancer <- read_csv("lung_cancer.csv")
+lung_cancer
+```
+
+## b) Perform EDA
+```{r}
+skimr::skim(lung_cancer)
+
+lung_cancer %>%
+  ggplot(aes(cases)) + geom_bar()
+
+lung_cancer %>%
+  ggplot(aes(pop, cases)) + geom_point()
+
+lung_cancer <- lung_cancer %>%
+  mutate(
+    across(where(is.character), factor)
+    )
+
+# Boxplot that shows the relationship between cases in the age and city groups
+lung_cancer %>%
+  select(where(is.factor),cases) %>%
+  pivot_longer(-cases) %>%
+  ggplot(aes(value,cases)) +
+  geom_boxplot() + 
+  facet_wrap(~name, scales = "free_x")
+
+# Boxplot that shows the relationship between proportion of cases to populations in the age and city groups
+lung_cancer %>%
+  mutate(
+    p = cases/pop
+  ) %>%
+  select(p,where(is.factor)) %>%
+  pivot_longer(-p) %>%
+  ggplot(aes(value,p)) +
+  geom_boxplot() + 
+  facet_wrap(~name, scales = "free_x")
+```
+
+## c) Fit a Poisson Rate Regression (M1)
+```{r}
+M1 <- glm(cases ~ 1, family = poisson, offset = log(pop), data = lung_cancer)
+summary(M1)
+```
+
+## d) Fit a Poisson Rate Regression (M2)
+```{r}
+M2 <- glm(cases ~ age + city, family = poisson, offset = log(pop), data = lung_cancer)
+summary(M2)
+```
+
+## e) Fit a Poisson Rate Regression (M3)
+```{r}
+M3 <- glm(cases ~ age + city + log(pop), family = poisson, offset = log(pop), data = lung_cancer)
+summary(M3)
+```
+
+## f) Use Anova to compare M1 and M2
+```{r}
+anova(M1,M2, test = "LRT")
+anova(M2, test = "LRT")
+```
+There is a significant difference between M1 and M2 as shown by the anova test where M2 has a p-value < 0.05. Therefore, both city and age are significant predictors in predicting the number of cases of lung cancer.
+
+## g) Find AIC of all 3 models
+```{r}
+AIC(M1,M2,M3)
+AIC(M2) - AIC(M3)
+```
+The difference in AIC between M2 and M3 is 1.95 which is within 2 of each other and the degree of freedom of M2 is lower than M3. Therefore, the rule of thumb is to choose the smaller model when this happens.
+
+## h) Summary of coefficients for M2
+```{r}
+coef_M2_age55_59 <- 1.1010
+exp(1.1010)
+
+```
+The coefficient of the age group 55-59 is 1.1010, this is equivalent to an increase of 3.007172 times (after taking the exponential on the coefficient e^1.1010 = 3.007172) for each increase in the population of the age group 55-59 by 1 person as compared to the age group 40-54 keeping everything else constant.
+
+## i) Obtain the Pearson Residuals for M2
+```{r}
+lung_cancer <- lung_cancer %>%
+  add_column(
+    M2_res = residuals(M2, type="pearson"),
+    M2_fit = fitted(M2)
+  )
+```
+
+## j) Plot residuals vs
+```{r}
+lung_cancer %>%
+  select(where(is.double)) %>%
+  pivot_longer(-M2_res) %>%
+  ggplot(aes(value, M2_res)) + geom_point() + facet_wrap(~name, scale = "free")
+
+lung_cancer %>%
+  select(where(is.factor), M2_res) %>%
+  pivot_longer(-M2_res) %>%
+  ggplot(aes(value, M2_res)) + geom_boxplot() + facet_wrap(~name, scale = "free")
+
+```
+
+## k) 
+```{r}
+new_data<-tibble(age = "40-54", pop = 4000, city = "Fredericia")
+lambda<-predict(M2,newdata = new_data, type = "response")
+ppois(5, lambda)
+
+# Trial and Error with different Lambda values
+ppois(5, 10)
+ppois(5, 5)
+```
+
+The log additive (multiplicative) model
+
+$$\begin{aligned}
+\mu_{ijk} = n_{ijk}e^{\alpha_i+\beta_j+\gamma_k}
+\end{aligned}$$
+

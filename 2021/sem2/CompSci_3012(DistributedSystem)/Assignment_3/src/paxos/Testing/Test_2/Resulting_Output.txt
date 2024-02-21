@@ -1,0 +1,9 @@
+M1 final value is 1 from 0.0 with proposal ID of 2.1
+M8 final value is 1 from 0.0 with proposal ID of 2.1
+M4 final value is 1 from 0.0 with proposal ID of 2.1
+M5 final value is 1 from 0.0 with proposal ID of 2.1
+M7 final value is 1 from 0.0 with proposal ID of 2.1
+M6 final value is 1 from 0.0 with proposal ID of 2.1
+M9 final value is 1 from 0.0 with proposal ID of 2.1
+M3 final value is 1 from 0.0 with proposal ID of 2.1
+M2 final value is 1 from 0.0 with proposal ID of 2.1

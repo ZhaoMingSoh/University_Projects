@@ -1,0 +1,13 @@
+#distance vector routing algorithm
+#undirected
+V 4
+L 5
+1
+2
+3
+4
+1 2 2
+2 3 3
+1 4 1
+2 4 7
+3 4 11

@@ -87,7 +87,7 @@ if __name__ == "__main__":
     X, y = training_dataset[:,:-2], training_dataset[:,-2]
     train_X, test_X, train_Y, test_Y = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    rfl = RandomForest(n_D_trees=100,n_feats=2)
+    rfl = RandomForest(n_D_trees=10,n_feats=2)
     rfl.model_fitting(train_X, train_Y)
     pred_Y = rfl.predict(test_X)
     acc = accuracy(pred_Y, test_Y)

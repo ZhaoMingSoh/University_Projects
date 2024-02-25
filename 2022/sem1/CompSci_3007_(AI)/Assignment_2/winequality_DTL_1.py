@@ -57,6 +57,10 @@ class DecisionTreeLearning:
         # 2 - choose the best objective feature with the highest information gain calculation
         best_gain, best_feat, best_thresh = self.get_best_criteria(train_X, train_Y, feat_idxs)
 
+        # Handle the case where best_thresh is None
+        if best_thresh is None:
+            best_thresh = np.median(train_X[:, best_feat])
+
         # 3 - use the best objective feature to split the data into a left and right subtrees, continue until a leaf node is formed
         left_idxs, right_idxs = self.get_split(train_X[:,best_feat], best_thresh)
         left = self.build_DecisionTree(train_X[left_idxs,:], train_Y[left_idxs], depth+1)
